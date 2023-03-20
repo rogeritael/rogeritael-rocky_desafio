@@ -1,10 +1,14 @@
 import { Button } from "../Button";
 import { CoverContainer } from "./styles";
 
+import logo from '../../assets/logo_synapse.png';
+
 export function Cover(){
     return(
         <CoverContainer>
             
+            <img src={logo} className="logo" alt="Logo" />
+
             <h1 className="call_to_action_title">
                 Comece sua jornada de aprendizado hoje mesmo!
             </h1>
