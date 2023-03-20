@@ -32,7 +32,7 @@ export const ButtonContainer = styled.button<ButtonProps>`
 
     background-color: ${props => props.background};
     color: #fff;
-    border: ${props => props.background === 'transparent' ? '1px solid #fff' : '1px solid #F89D24' };
+    border: ${props => props.background === 'transparent' ? '1px solid #fff' : '' };
 
     animation: ${opacityAnimation} 1s ease, ${bounceAnimation} 2s 1s ease infinite;
     border-radius: 5px;
@@ -43,11 +43,13 @@ export const ButtonContainer = styled.button<ButtonProps>`
     &::before {
         content: '';
         width: 100%;
-        height: 100%;
+        height: 101%;
         opacity: 0;
         position: absolute;
         border-radius: 5px;
         left: 0;
+        right: 0;
+        top: 0;
         bottom: 0;
         background-color: #fff;
         z-index: -1;
