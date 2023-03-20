@@ -25,13 +25,15 @@ const rightToLeftAnimation = keyframes`
 
 export const CoverContainer = styled.header`
     margin: 0 auto;
-    max-width: 800px;
+    /* max-width: 800px; */
+    width: 100%;
     height: 100vh;
 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: linear-gradient(to left top, #2c2c2c, #242424, #1d1d1d, #151515, #0c0c0c);
 
     h1.call_to_action_title {
         font-family: 'Yantramanav';
@@ -53,6 +55,7 @@ export const CoverContainer = styled.header`
         line-height: 30px;
         text-align: center;
         animation: ${rightToLeftAnimation} 900ms ease-in-out;
+        position: relative;
     }
 
     
