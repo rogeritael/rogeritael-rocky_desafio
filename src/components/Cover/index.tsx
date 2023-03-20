@@ -6,12 +6,11 @@ export function Cover(){
         <CoverContainer>
             
             <h1 className="call_to_action_title">
-                Lorem Ipsum Dolor Sit Amet,
-                Consectetur Adipiscing Elit
+                Comece sua jornada de aprendizado hoje mesmo!
             </h1>
             <p className="cover_description_text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore
+                Aprenda no seu próprio ritmo com nossos cursos online de alta qualidade.
+                Aproveite ao máximo seu potencial e alcance seus objetivos educacionais conosco.
             </p>
 
             <div className="button_container">

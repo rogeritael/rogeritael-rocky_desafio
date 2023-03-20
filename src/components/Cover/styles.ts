@@ -50,7 +50,7 @@ export const CoverContainer = styled.header`
         font-weight: 300;
         font-size: 18px;
         max-width: 450px;
-        line-height: 40px;
+        line-height: 30px;
         text-align: center;
         animation: ${rightToLeftAnimation} 900ms ease-in-out;
     }

@@ -32,10 +32,38 @@ export const ButtonContainer = styled.button<ButtonProps>`
 
     background-color: ${props => props.background};
     color: #fff;
-    border: ${props => props.background === 'transparent' ? '1px solid #fff' : 'none' };
+    border: ${props => props.background === 'transparent' ? '1px solid #fff' : '1px solid #F89D24' };
 
     animation: ${opacityAnimation} 1s ease, ${bounceAnimation} 2s 1s ease infinite;
-    /* animation:  */
     border-radius: 5px;
     cursor: pointer;
+    position: relative;
+    transition: 500ms;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        border-radius: 5px;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        z-index: -1;
+        transition: 500ms;
+    }
+
+    //efeito ao passar o mouse
+    &:hover {
+        &::before {
+            ${props => props.background === 'transparent' ? 'opacity: 1; border: none' : ''};
+        }
+
+        color: ${props => props.background === 'transparent' ? '#262626' : '#F89D24'};
+        ${props => props.background === '#F89D24' ? `
+            border: 1px solid #F89D24;
+            background-color: transparent;
+        ` : 'transparent'};
+    }
 `;
