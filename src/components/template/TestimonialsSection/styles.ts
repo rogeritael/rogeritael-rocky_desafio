@@ -78,12 +78,32 @@ export const TestimonialsStyle = styled.section`
                 }
             }
 
-            .testimonial_controller {
+            .testimonial_arrow_controller {
                 cursor: pointer;
                 transition: 300ms ease-in-out;
 
                 &:hover {
                     scale: 1.2;
+                }
+
+                img {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .testimonial_controllers_box {
+            margin-top: 80px;
+
+            img {
+                width: 15px;
+                height: 15px;
+                margin: 0 15px;
+                cursor: pointer;
+                transition: 150ms ease-in-out;
+
+                &:hover {
+                    scale: 1.3;
                 }
             }
         }
