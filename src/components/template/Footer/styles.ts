@@ -7,6 +7,17 @@ export const FooterStyle = styled.footer`
     flex-direction: column;
     align-items: center;
 
+    .socials {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 40px;
+        cursor: pointer;
+
+        svg {
+            font-size: 32px;
+        }
+    }
+
     ul {
         display: flex;
         gap: 20px;
