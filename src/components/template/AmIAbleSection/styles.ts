@@ -25,15 +25,11 @@ export const AmIAbleStyle = styled.section`
         }
 
         .button_container {
-            button {
-                border: 1px solid red;
-                display: block;
-            }
-            
             display: flex;
-            height: max-content;
-            flex-direction: row;
-
+            justify-content: space-between;
+            button {
+                margin: 0;
+            }
         }
     }
 `;

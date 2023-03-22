@@ -1,4 +1,5 @@
 import React from 'react';
+import { AbilityToLearn } from './components/template/AbilityToLearn';
 import { AmIAbleSection } from './components/template/AmIAbleSection';
 import { CallToActionSection } from './components/template/CallToActionSection';
 import { Cover } from './components/template/Cover';
@@ -21,6 +22,7 @@ function App() {
       <EducatorsSection />
       <TestmonialsSection />
       <AmIAbleSection />
+      <AbilityToLearn />
     </>
   );
 }
