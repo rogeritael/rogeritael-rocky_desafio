@@ -27,6 +27,10 @@ export const TestimonialsStyle = styled.section`
         width: 100%;
         height: 100%;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         &::before {
             content: '';
@@ -53,9 +57,34 @@ export const TestimonialsStyle = styled.section`
 
         .testimonial_box {
             display: flex;
+            align-items: center;
+            justify-content: center;
 
             .testimonial{
                 margin: 0 60px;
+                width: 800px;
+                margin: 0 60px;
+
+                p {
+                    font-size: var(--t2);
+                    margin-bottom: 30px;
+                }
+
+                h3 {
+                    text-transform: uppercase;
+                    color: var(--orange);
+                    text-align: right;
+                    font-size: var(--tbody1);
+                }
+            }
+
+            .testimonial_controller {
+                cursor: pointer;
+                transition: 300ms ease-in-out;
+
+                &:hover {
+                    scale: 1.2;
+                }
             }
         }
     }
