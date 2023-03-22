@@ -1,5 +1,18 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import skillbg from '../../assets/skills_bg.png';
+
+const shakeButtonAnimation = keyframes `
+    0%{
+        transform: rotateX(15deg);
+    }
+    5%{
+        transform: rotateX(0);
+    }
+    10%{
+        transform: rotateX(-15deg);
+    }
+`;
+
 
 export const SkillsStyle = styled.section`
     height: 611px;
@@ -29,6 +42,25 @@ export const SkillsStyle = styled.section`
                 justify-content: center;
                 opacity: .5;
                 cursor: pointer;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    width: 0;
+                    height: 100%;
+                    background-color: var(--light-gray3);
+                    position: absolute;
+                    left: 0;
+                    z-index: -1;
+                    transition: 500ms;
+                }
+
+                &:hover {
+                    &::before {
+                        width: 100%;
+                    }
+
+                }
 
                 &.active {
                     opacity: 1;
@@ -67,6 +99,7 @@ export const SkillsStyle = styled.section`
                 .purchase_now_button {
                     margin-left: 30px;
                     color: var(--orange);
+                    
                 }
             }
         }
