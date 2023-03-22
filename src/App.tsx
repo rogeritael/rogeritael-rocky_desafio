@@ -5,6 +5,7 @@ import { CoverContainer } from './components/template/Cover/styles';
 import { EducatorsSection } from './components/template/EducatorsSection';
 import { MaisClientesSection } from './components/template/MaisClientesSection';
 import { SkillsContainer } from './components/template/SkillsContainer';
+import { TestmonialsSection } from './components/template/TestimonialsSection';
 
 import { GlobalStyle } from './GlobalStyles';
 
@@ -17,6 +18,7 @@ function App() {
       <CallToActionSection />
       <SkillsContainer />
       <EducatorsSection />
+      <TestmonialsSection />
     </>
   );
 }
