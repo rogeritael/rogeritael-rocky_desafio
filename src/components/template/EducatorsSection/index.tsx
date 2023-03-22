@@ -1,6 +1,6 @@
-import { AppLimiter } from "../AppLimiter";
-import { Button } from "../Button";
-import { EducatorCard } from "../EducatorCard";
+import { AppLimiter } from "../../AppLimiter";
+import { Button } from "../../Button";
+import { EducatorCard } from "../../EducatorCard";
 import { EducatorsSectionStyle } from "./styles";
 
 export function EducatorsSection(){

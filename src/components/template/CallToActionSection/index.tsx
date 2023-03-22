@@ -1,4 +1,4 @@
-import { Button } from "../Button";
+import { Button } from "../../Button";
 import { CallToActionContainer } from "./styles";
 
 export function CallToActionSection(){

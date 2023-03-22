@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import skillbg from '../../assets/skills_bg.png';
+import skillbg from '../../../assets/skills_bg.png';
 
 const shakeButtonAnimation = keyframes `
     0%{

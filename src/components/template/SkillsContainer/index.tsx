@@ -1,6 +1,6 @@
-import { AppLimiter } from "../AppLimiter";
+import { AppLimiter } from "../../AppLimiter";
 import { SkillsStyle } from "./styles";
-import { skillsMock } from "../../mocks/skills";
+import { skillsMock } from "../../../mocks/skills";
 
 export function SkillsContainer(){
     return(

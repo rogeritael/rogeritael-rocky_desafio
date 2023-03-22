@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import banner from '../../assets/Vector.png';
+import banner from '../../../assets/Vector.png';
 
 export const CallToActionContainer = styled.section`
     display: flex;

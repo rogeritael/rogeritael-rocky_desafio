@@ -1,5 +1,5 @@
-import { Button } from "../Button";
-import { GoalCard } from "../GoalCard";
+import { Button } from "../../Button";
+import { GoalCard } from "../../GoalCard";
 import { MaisClientesContainer } from "./styles"
 
 export function MaisClientesSection(){

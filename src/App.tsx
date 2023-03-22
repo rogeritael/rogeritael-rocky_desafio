@@ -1,9 +1,11 @@
 import React from 'react';
-import { CallToActionSection } from './components/CallToActionSection';
-import { Cover } from './components/Cover';
-import { EducatorsSection } from './components/EducatorsSection';
-import { MaisClientesSection } from './components/MaisClientesSection';
-import { SkillsContainer } from './components/SkillsContainer';
+import { CallToActionSection } from './components/template/CallToActionSection';
+import { Cover } from './components/template/Cover';
+import { CoverContainer } from './components/template/Cover/styles';
+import { EducatorsSection } from './components/template/EducatorsSection';
+import { MaisClientesSection } from './components/template/MaisClientesSection';
+import { SkillsContainer } from './components/template/SkillsContainer';
+
 import { GlobalStyle } from './GlobalStyles';
 
 function App() {
