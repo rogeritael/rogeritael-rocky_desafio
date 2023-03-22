@@ -12,6 +12,7 @@ export const MaisClientesContainer = styled.section`
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-left: 177px;
 
         .mais_clientes_text_container {
             display: flex;
@@ -19,21 +20,24 @@ export const MaisClientesContainer = styled.section`
             
 
             h1 {
-                font-size: 3.375rem;
+                font-size: var(--t1);
+                line-height: 83px;
                 font-weight: normal;
                 margin-bottom: 20px;
             }
 
             .subtitle {
                 font-weight: bold;
+                margin-top: 20px;
                 margin-bottom: 10px;
+                font-size: var(--tbody1);
             }
 
             .description {
                 width: 400px;
                 margin-bottom: 20px;
-                opacity: .5;
                 font-weight: 300;
+                font-size: var(--tbody1);
             }
         }
 
@@ -41,9 +45,23 @@ export const MaisClientesContainer = styled.section`
             .price {
                 margin-left: auto;
                 text-align: right;
-                padding-right: 30px;
+                padding-right: 145px;
                 font-weight: bold;
             }
+
+            
+            .button_container {
+                display: flex;
+            
+                button {
+                    margin: 15px 0 0 0;
+
+                    &:first-child {
+                        margin-right: 30px;
+                    }
+                }
+            }
+
         }
     }
 

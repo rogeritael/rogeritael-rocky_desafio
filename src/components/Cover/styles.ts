@@ -37,7 +37,8 @@ export const CoverContainer = styled.header`
     margin: 0 auto;
     /* max-width: 800px; */
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 768px;
     padding: 0px 10px 15px 10px;
 
     display: flex;
@@ -48,6 +49,8 @@ export const CoverContainer = styled.header`
 
     .logo {
         position: absolute;
+        width: 110px;
+        height: 90px;
         top: 25px;
         left: 60px;
         animation: ${leftToRightAnimation} 600ms ease-in-out;
@@ -61,7 +64,7 @@ export const CoverContainer = styled.header`
         margin-top: 30px;
         /* font-family: 'Yantramanav'; */
         max-width: 800px;
-        font-size: 3.375rem;
+        font-size: var(--t1);
         line-height: 70px;
         text-align: center;
         animation: ${leftToRightAnimation} 900ms ease-in-out;
@@ -73,7 +76,7 @@ export const CoverContainer = styled.header`
         margin-top: 30px;
         margin-bottom: 75px;
         font-weight: 300;
-        font-size: 18px;
+        font-size: var(--tbody1);
         max-width: 450px;
         line-height: 30px;
         text-align: center;

@@ -25,9 +25,9 @@ const bounceAnimation = keyframes `
     }`
 
 export const ButtonContainer = styled.button<ButtonProps>`
-    padding: .9rem 0.7rem;
+    padding: 20px 52px;
     margin: 10px 15px;
-    font-size: 12px;
+    font-size: var(--tbody2);
     font-weight: bold;
 
     background-color: ${props => props.background};

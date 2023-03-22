@@ -5,7 +5,7 @@ export function CallToActionSection(){
     return(
         <CallToActionContainer>
             <h1 className="cta">
-                Tome a decisão agora de transformar a sua empresa no digital
+                Tome agora a decisão de transformar a sua empresa no mundo digital
             </h1>
             <div className="price_container">
                 <p className="price">R$ 5.000,00</p>

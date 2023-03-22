@@ -17,9 +17,10 @@ export function MaisClientesSection(){
                         Durante o curso, você aprenderá tudo o que precisa saber sobre marketing nas
                         principais plataformas de mídia social, incluindo Facebook Ads, Google Ads e Instagram Ads.
                         
-                        <br/><br/>
+                        {/* Tirei pra não deixar muito texto nessa seção  */}
+                        {/* <br/><br/>
                         Além disso, você aprenderá a criar conteúdo relevante e atraente para suas campanhas de marketing,
-                        bem como a otimizar seu site para mecanismos de pesquisa (SEO) para aumentar sua visibilidade online.
+                        bem como a otimizar seu site para mecanismos de pesquisa (SEO) para aumentar sua visibilidade online. */}
                     </p>
                     <div className="price_container">
                         <p className="price">R$ 5.000,00</p>
