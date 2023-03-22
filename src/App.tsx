@@ -1,4 +1,5 @@
 import React from 'react';
+import { AmIAbleSection } from './components/template/AmIAbleSection';
 import { CallToActionSection } from './components/template/CallToActionSection';
 import { Cover } from './components/template/Cover';
 import { CoverContainer } from './components/template/Cover/styles';
@@ -19,6 +20,7 @@ function App() {
       <SkillsContainer />
       <EducatorsSection />
       <TestmonialsSection />
+      <AmIAbleSection />
     </>
   );
 }
