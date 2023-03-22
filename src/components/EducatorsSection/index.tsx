@@ -7,8 +7,8 @@ export function EducatorsSection(){
     return(
         <AppLimiter>
             <EducatorsSectionStyle>
-                <h1>Nossos <br/> Professores</h1>
-                
+                <h1 className="title">Nossos <br/> Professores</h1>
+
                 <div className="card_chain">
                     <EducatorCard />
                     <EducatorCard />
