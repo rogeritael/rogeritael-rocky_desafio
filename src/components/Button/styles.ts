@@ -68,4 +68,8 @@ export const ButtonContainer = styled.button<ButtonProps>`
             background-color: transparent;
         ` : 'transparent'};
     }
+
+    @media (max-width: 425px){
+        font-size: 16px;
+    }
 `;

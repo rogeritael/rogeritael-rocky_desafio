@@ -17,13 +17,13 @@ function App() {
     <>
       <GlobalStyle />
       <Cover />
-      <MaisClientesSection />
-      <CallToActionSection />
-      <SkillsContainer />
-      <EducatorsSection />
-      <TestmonialsSection />
-      <AmIAbleSection />
-      <AbilityToLearn />
+      {/* <MaisClientesSection /> */}
+      {/* <CallToActionSection /> */}
+      {/* <SkillsContainer /> */}
+      {/* <EducatorsSection /> */}
+      {/* <TestmonialsSection /> */}
+      {/* <AmIAbleSection /> */}
+      {/* <AbilityToLearn /> */}
       <Footer />
     </>
   );
