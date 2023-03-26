@@ -42,7 +42,7 @@ export const CoverContainer = styled.header`
     /* display: flex; */
     background-image: linear-gradient(to left top, #2c2c2c, #242424, #1d1d1d, #151515, #0c0c0c);
 
-    .limiter {
+    .app_limiter {
         display: flex;
         flex-direction: column;
         align-items: center;

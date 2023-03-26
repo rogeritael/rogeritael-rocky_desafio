@@ -7,7 +7,7 @@ interface AppLimiterProps {
 
 export function AppLimiter({ children, className }: AppLimiterProps){
     return(
-        <LimiterContainer className={className}>
+        <LimiterContainer className='app_limiter'>
             {children}
         </LimiterContainer>
     )

@@ -19,7 +19,7 @@ function App() {
       <Cover />
       <MaisClientesSection />
       <CallToActionSection />
-      {/* <SkillsContainer /> */}
+      <SkillsContainer />
       {/* <EducatorsSection /> */}
       {/* <TestmonialsSection /> */}
       {/* <AmIAbleSection /> */}

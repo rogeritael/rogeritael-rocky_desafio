@@ -20,9 +20,12 @@ export const SkillsStyle = styled.section`
     background-image: url(${skillbg});
     background-size: 100%;
     background-position: center;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+
+    .app_limiter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .skills_box{
         display: flex;
@@ -72,7 +75,7 @@ export const SkillsStyle = styled.section`
         .skills_description_container {
             width: 600px;
             height: 379px;
-            padding: 65px 125px;
+            padding: 65px 100px;
             background-color: var(--dark-gray1);
             display: flex;
             flex-direction: column;
@@ -102,6 +105,39 @@ export const SkillsStyle = styled.section`
                     
                 }
             }
+        }
+    }
+
+    @media (max-width: 1124px){
+        .skills_box .skills_list_container ul {
+            text-align: center;
+            width: 230px; 
+        }
+
+        .skills_box .skills_description_container {
+            width:450px;
+            padding: 55px 50px;
+        }
+    }
+
+    @media (max-width: 768px){
+        .skills_box { 
+            width: 90%;
+            
+            
+            .skills_list_container {
+                /* border: 1px solid red; */
+                width: 100%;
+            
+                ul {
+                    width: 100%;
+                }
+            }
+            
+        }
+
+        .skills_box .skills_description_container {
+            display: none;
         }
     }
 `
