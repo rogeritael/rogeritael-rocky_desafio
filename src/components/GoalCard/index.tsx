@@ -10,8 +10,10 @@ export function GoalCard({ title, description }: GoalCardProps){
     return(
         <GoalCardContainer>
             <img src={image} alt='metodologias' />
-            <h4>{title.toUpperCase()}</h4>
-            <p>{description}</p>
+            <div className="text_container">
+                <h4>{title.toUpperCase()}</h4>
+                <p>{description}</p>
+            </div>
         </GoalCardContainer>
     )
 }

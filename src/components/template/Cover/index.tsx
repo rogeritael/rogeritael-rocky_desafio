@@ -2,10 +2,13 @@ import { Button } from "../../Button";
 import { CoverContainer } from "./styles";
 
 import logo from '../../../assets/logo_synapse.png';
+import { AppLimiter } from "../../AppLimiter";
 
 export function Cover(){
     return(
         <CoverContainer>
+            <AppLimiter className="limiter">
+            
             
             <img src={logo} className="logo" alt="Logo" />
 
@@ -27,6 +30,7 @@ export function Cover(){
                     background='#F89D24' 
                 />
             </div>
+        </AppLimiter>
         </CoverContainer>
     );
 }

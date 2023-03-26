@@ -36,6 +36,7 @@ const logoAnimation = keyframes`
 export const CoverContainer = styled.header`
     margin: 0 auto;
     width: 100%;
+
     /* min-height: 804px; */
     padding: 180px 15px 100px 15px;
 
@@ -44,6 +45,11 @@ export const CoverContainer = styled.header`
     justify-content: center;
     flex-direction: column;
     background-image: linear-gradient(to left top, #2c2c2c, #242424, #1d1d1d, #151515, #0c0c0c);
+
+    .limiter {
+        display: flex;
+        flex-direction: column;
+    }
 
     .logo {
         position: absolute;
@@ -80,9 +86,8 @@ export const CoverContainer = styled.header`
     }
 
     @media (max-width: 560px){
-        /* padding: 80px 40px; */
-
-        
+            /* padding: 80px 40px; */
+        padding-top: 150px;
 
         p.cover_description_text {
             margin-top: 15px;

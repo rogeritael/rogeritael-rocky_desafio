@@ -1,8 +1,13 @@
 import { LimiterContainer } from "./styles";
 
-export function AppLimiter({ children }:{ children: any}){
+interface AppLimiterProps {
+    children: any,
+    className?: string
+}
+
+export function AppLimiter({ children, className }: AppLimiterProps){
     return(
-        <LimiterContainer>
+        <LimiterContainer className={className}>
             {children}
         </LimiterContainer>
     )
