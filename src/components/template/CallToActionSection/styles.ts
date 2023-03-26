@@ -4,7 +4,7 @@ import banner from '../../../assets/Vector.png';
 export const CallToActionContainer = styled.section`
     display: flex;
     align-items: center;
-    height: 365px;
+    min-height: 365px;
     position: relative;
     background-color: var(--black1); 
     background-image: url(${banner});
@@ -30,9 +30,30 @@ export const CallToActionContainer = styled.section`
         }
     }
 
-    h1 {
+    h1.cta {
         flex: 1;
         font-size: var(--t2);
         padding: 0 40px;
+    }
+
+    @media (max-width: 1024px) {
+        .price_container {
+            width: 350px;
+        }
+    }
+
+    @media (max-width: 924px) {
+        flex-direction: column;
+
+        h1.cta {
+            text-align: center;
+            margin: 75px 15px;
+            padding: 0;
+        }
+
+        .price_container {
+            width: 100%;
+            height: 250px;
+        }
     }
 `;
