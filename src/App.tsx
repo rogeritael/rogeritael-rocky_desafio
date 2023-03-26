@@ -22,7 +22,7 @@ function App() {
       <SkillsContainer />
       {/* <EducatorsSection /> */}
       <TestmonialsSection />
-      {/* <AmIAbleSection /> */}
+      <AmIAbleSection />
       {/* <AbilityToLearn /> */}
       <Footer />
     </>

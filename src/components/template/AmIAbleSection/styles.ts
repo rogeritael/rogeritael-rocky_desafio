@@ -32,4 +32,21 @@ export const AmIAbleStyle = styled.section`
             }
         }
     }
+
+    @media (max-width: 768px){
+        justify-content: center;
+
+        .text_container {
+            margin: 0;
+            padding: 0 15px;
+        }
+
+    }
+
+    @media (max-width: 425px){
+        .button_container {
+                flex-direction: column;
+                gap: 30px;
+            }
+    }
 `;
