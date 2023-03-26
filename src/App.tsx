@@ -23,7 +23,7 @@ function App() {
       {/* <EducatorsSection /> */}
       <TestmonialsSection />
       <AmIAbleSection />
-      {/* <AbilityToLearn /> */}
+      <AbilityToLearn />
       <Footer />
     </>
   );

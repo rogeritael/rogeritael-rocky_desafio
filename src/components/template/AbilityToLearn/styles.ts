@@ -1,17 +1,15 @@
 import styled from "styled-components"
 
 export const AbilityToLearnStyle = styled.section`
-    height: 759px;
+    min-height: 759px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
     .left_text_container {
         width: 450px;
-        margin-right: 60px;
         padding: 0 20px;
-        /* border: 1px solid red; */
 
         h2 {
             font-size: var(--t1);
@@ -30,8 +28,52 @@ export const AbilityToLearnStyle = styled.section`
     }
 
     .right_text_container {
-        width: 523px;
-        padding: 0 50px;
-        margin-left: 60px;
+        padding: 0 10px;
+    }
+
+    @media (max-width: 980px){
+        flex-direction: column;
+
+        .left_text_container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            padding: 10px 40px;
+
+            .text {
+                max-width: 375px;
+            }
+
+            .button_container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .right_text_container{
+            width: 100%;
+
+            div {
+                margin: 40px auto;
+                padding: 0 40px;
+                width: 100%;
+            }
+        } 
+    }
+
+    @media(max-width: 768px){
+        .left_text_container .button_container {
+            display: none;
+        }
+    }
+
+    @media(max-width: 425px){
+        .right_text_container{
+
+            div {
+                padding: 0 20px;
+            }
+        } 
     }
 `;
