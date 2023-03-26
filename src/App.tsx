@@ -20,7 +20,7 @@ function App() {
       <MaisClientesSection />
       <CallToActionSection />
       <SkillsContainer />
-      {/* <EducatorsSection /> */}
+      <EducatorsSection />
       <TestmonialsSection />
       <AmIAbleSection />
       <AbilityToLearn />
