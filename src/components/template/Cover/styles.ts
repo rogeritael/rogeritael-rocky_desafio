@@ -37,13 +37,9 @@ export const CoverContainer = styled.header`
     margin: 0 auto;
     width: 100%;
 
-    /* min-height: 804px; */
     padding: 180px 15px;
 
-    display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    /* flex-direction: column; */
+    /* display: flex; */
     background-image: linear-gradient(to left top, #2c2c2c, #242424, #1d1d1d, #151515, #0c0c0c);
 
     .limiter {
@@ -103,9 +99,9 @@ export const CoverContainer = styled.header`
     @media (max-width: 425px){
         padding: 0 10px 50px 10px;
 
+
         h1.call_to_action_title {
             font-size: var(--t2);
-            font-weight: 900;
         }
 
         .button_container {
@@ -113,7 +109,7 @@ export const CoverContainer = styled.header`
             flex-direction: column;
 
             button {
-                width: 300px;
+                width: 250px;
             }
         }
 
