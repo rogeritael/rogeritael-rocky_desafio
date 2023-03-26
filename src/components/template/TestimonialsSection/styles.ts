@@ -63,7 +63,6 @@ export const TestimonialsStyle = styled.section`
             .testimonial{
                 margin: 0 60px;
                 width: 800px;
-                margin: 0 60px;
 
                 p {
                     font-size: var(--t2);
@@ -104,6 +103,34 @@ export const TestimonialsStyle = styled.section`
 
                 &:hover {
                     scale: 1.3;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1024px){
+        .slider_container .testimonial_box .testimonial {
+            text-align: center;
+            width: 600px;
+            margin: 0 30px;
+        }
+    }
+
+    @media (max-width: 1024px){
+        padding: 10px;
+
+        .slider_container .testimonial_box {
+            .testimonial_arrow_controller {
+                display: none;
+            
+            }
+
+            .testimonial {
+                width: 100%;
+                margin: 0 10px;
+
+                h3 {
+                    text-align: center;
                 }
             }
         }

@@ -7,7 +7,7 @@ export function EducatorsSection(){
     return(
         <AppLimiter>
             <EducatorsSectionStyle>
-                <h1 className="title">Nossos <br/> Professores</h1>
+                {/* <h1 className="title">Nossos <br/> Professores</h1> */}
 
                 <div className="card_chain">
                     <EducatorCard />
@@ -17,7 +17,7 @@ export function EducatorsSection(){
                     <EducatorCard />
                     <EducatorCard />
                 </div>
-                <div className="button_container">
+                {/* <div className="button_container">
                     <Button
                         text="Tenho interesse"
                         background="transparent"
@@ -26,7 +26,7 @@ export function EducatorsSection(){
                         text="Comprar Agora"
                         background="#F89D24"
                     />
-                </div>     
+                </div>      */}
             </EducatorsSectionStyle>
         </AppLimiter>
     )

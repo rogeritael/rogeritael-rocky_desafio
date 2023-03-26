@@ -21,7 +21,7 @@ function App() {
       <CallToActionSection />
       <SkillsContainer />
       {/* <EducatorsSection /> */}
-      {/* <TestmonialsSection /> */}
+      <TestmonialsSection />
       {/* <AmIAbleSection /> */}
       {/* <AbilityToLearn /> */}
       <Footer />
