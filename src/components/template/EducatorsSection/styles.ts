@@ -20,5 +20,30 @@ export const EducatorsSectionStyle = styled.section`
         margin: 0 auto;
         padding: 100px 0 125px 0;
     }
+    @media (max-width: 768px) {
+        h1.title {
+            margin-left: 40px;
+        }
+    }
     
+    @media (max-width: 425px) {
+
+        h1.title {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card_chain {
+            gap: 0;
+        }
+
+        .button_container {
+            display: flex;
+            flex-direction: column;
+
+            button {
+                width: 250px;
+            }
+        }
+    }
 `;

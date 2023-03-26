@@ -26,9 +26,11 @@ export const AmIAbleStyle = styled.section`
 
         .button_container {
             display: flex;
+            align-items: center;
             justify-content: space-between;
             button {
                 margin: 0;
+                width: 250px;
             }
         }
     }
