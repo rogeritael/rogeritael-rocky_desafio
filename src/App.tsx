@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Cover />
+      {/* <Cover /> */}
       <MaisClientesSection />
       {/* <CallToActionSection /> */}
       {/* <SkillsContainer /> */}

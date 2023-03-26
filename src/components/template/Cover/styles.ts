@@ -38,17 +38,18 @@ export const CoverContainer = styled.header`
     width: 100%;
 
     /* min-height: 804px; */
-    padding: 180px 15px 100px 15px;
+    padding: 180px 15px;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    /* flex-direction: column; */
     background-image: linear-gradient(to left top, #2c2c2c, #242424, #1d1d1d, #151515, #0c0c0c);
 
     .limiter {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .logo {

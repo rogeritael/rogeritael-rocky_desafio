@@ -34,7 +34,7 @@ export const MaisClientesContainer = styled.section`
             }
 
             .description {
-                width: 400px;
+                max-width: 400px;
                 margin-bottom: 20px;
                 font-weight: 300;
                 font-size: var(--tbody1);
@@ -104,6 +104,8 @@ export const MaisClientesContainer = styled.section`
     @media (max-width: 640px) {
 
         .left_side {
+            padding: 20px;
+
             .price_container {
                 display: none;
             }
