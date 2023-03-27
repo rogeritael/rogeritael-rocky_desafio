@@ -1,4 +1,5 @@
 import React from 'react';
+import { ChatBot } from './components/ChatBot';
 import { HelpButton } from './components/HelpButton';
 import { AbilityToLearn } from './components/template/AbilityToLearn';
 import { AmIAbleSection } from './components/template/AmIAbleSection';
@@ -18,6 +19,7 @@ function App() {
     <>
       <GlobalStyle />
       <HelpButton />
+      <ChatBot />
       <Cover />
       <MaisClientesSection />
       <CallToActionSection />
