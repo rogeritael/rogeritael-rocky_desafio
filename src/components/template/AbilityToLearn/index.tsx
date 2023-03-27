@@ -2,6 +2,7 @@ import { AppLimiter } from "../../AppLimiter";
 import { Button } from "../../Button";
 import { Topic } from "../../Topic";
 import { AbilityToLearnStyle } from "./styles";
+import { methodologies } from "../../../mocks/methodologies";
 
 export function AbilityToLearn(){
     return(
@@ -33,10 +34,9 @@ export function AbilityToLearn(){
                     </div>
                 </div>
                 <div className="right_text_container">
-                    <Topic metodology="metodologia" content="conteudo conteudoconteudoconteudo conteudoconteudo conteudoconteudoconteudoconteudo conteudoconteudo conteudo conteudoconteudoconteudoconteudo"/>
-                    <Topic metodology="metodologia" content="conteudo conteudoconteudoconteudo conteudoconteudo conteudoconteudoconteudoconteudo conteudoconteudo conteudo conteudoconteudoconteudoconteudo"/>
-                    <Topic metodology="metodologia" content="conteudo conteudoconteudoconteudo conteudoconteudo conteudoconteudoconteudoconteudo conteudoconteudo conteudo conteudoconteudoconteudoconteudo"/>
-                    <Topic metodology="metodologia" content="conteudo conteudoconteudoconteudo conteudoconteudo conteudoconteudoconteudoconteudo conteudoconteudo conteudo conteudoconteudoconteudoconteudo"/>
+                    {methodologies.map((methodology) => (
+                        <Topic metodology={methodology.title} content={methodology.description}/>
+                    ))}
                 </div>
         </AbilityToLearnStyle>
         </AppLimiter>

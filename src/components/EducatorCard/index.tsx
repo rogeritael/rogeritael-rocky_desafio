@@ -2,21 +2,26 @@ import { EducatorCardStyle } from "./styles";
 import profile_img from '../../assets/profile.jpg';
 import { AppLimiter } from "../AppLimiter";
 
-export function EducatorCard(){
+import foto from '../../assets/profile.jpg'
+
+interface EducatorCardProps {
+    name: string,
+    photo: string,
+    title: string,
+    description: string,
+}
+
+export function EducatorCard({ name, photo, title, description }: EducatorCardProps){
     return(
         <EducatorCardStyle>
                 <div className="educator_profile">
-                    <img src={profile_img} alt="imagem de perfil do professor" />
+                    <img src={photo} alt="imagem de perfil do professor" />
                 </div>
 
                 <div className="text_container">
-                    <h2>Gabriela Oliveira,</h2>
-                    <h2>Especialista em Conteúdo</h2>
-                    <p>
-                        Gabriela é apaixonada por criar conteúdo que engaja e conecta as pessoas. Ela tem 
-                        anos de experiência em produção de conteúdo para web, e está empolgada para
-                        compartilhar seus conhecimentos e técnicas com os alunos do curso de marketing digital.
-                    </p>
+                    <h2>{name},</h2>
+                    <h2>{title}</h2>
+                    <p>{description}</p>
                 </div>
         </EducatorCardStyle>
     )
