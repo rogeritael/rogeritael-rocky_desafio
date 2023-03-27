@@ -15,6 +15,12 @@ export const FooterStyle = styled.footer`
 
         svg {
             font-size: 32px;
+            transition: 500ms;
+
+            &:hover {
+                scale: 1.1;
+                transform: rotate(360deg);
+            }
         }
     }
 

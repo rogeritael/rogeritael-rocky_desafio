@@ -1,4 +1,5 @@
 import React from 'react';
+import { HelpButton } from './components/HelpButton';
 import { AbilityToLearn } from './components/template/AbilityToLearn';
 import { AmIAbleSection } from './components/template/AmIAbleSection';
 import { CallToActionSection } from './components/template/CallToActionSection';
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
+      <HelpButton />
       <Cover />
       <MaisClientesSection />
       <CallToActionSection />
