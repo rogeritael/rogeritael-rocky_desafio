@@ -1,5 +1,6 @@
 import { AppLimiter } from "../../AppLimiter";
 import { Button } from "../../Button";
+import { ButtonContainer } from "../../ButtonContainer";
 import { AmIAbleStyle } from "./styles";
 
 export function AmIAbleSection(){
@@ -21,17 +22,8 @@ export function AmIAbleSection(){
                     seu sucesso.
                 </p>
 
-                <div className="button_container">
-                    <Button
-                        text="tenho interesse"
-                        background="transparent"
-                    />
-                    <Button
-                        text="comprar agora"
-                        background="#F89D24"
-                    />
-                </div>
             </div>
+            <ButtonContainer />
             </AppLimiter>
         </AmIAbleStyle>
     );

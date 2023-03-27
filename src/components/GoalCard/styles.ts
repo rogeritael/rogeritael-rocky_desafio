@@ -9,7 +9,6 @@ const pulse = keyframes`
 export const GoalCardContainer = styled.div`
     width: 255px;
     height: 255px;
-    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -20,6 +19,7 @@ export const GoalCardContainer = styled.div`
         content: '';
         width: 100%;
         height: 100%;
+        border-radius: 5px;
         border: 1px solid #fff;
         position: absolute;
         left: 0;
@@ -33,12 +33,10 @@ export const GoalCardContainer = styled.div`
 
     }
 
-
     img {
         width: 99px;
         height: 96px;
         margin: 0 auto;
-        /* margin-bottom: 20px; */
     }
 
     .text_container {

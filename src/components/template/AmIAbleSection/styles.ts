@@ -5,7 +5,10 @@ export const AmIAbleStyle = styled.section`
     height: 898px;
     background-image: url(${bg});
     background-size: cover;
-    
+
+    .button_container {
+        display: none;
+    }
     
     .app_limiter {
         display: flex;
@@ -14,7 +17,7 @@ export const AmIAbleStyle = styled.section`
     }
 
     .text_container {
-        width: 394px;
+        width: 410px;
         height: fit-content;
         margin-right: 127px;
 
@@ -26,16 +29,6 @@ export const AmIAbleStyle = styled.section`
         p {
             font-size: var(--tbody1);
             margin-bottom: 80px;
-        }
-
-        .button_container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            button {
-                margin: 0;
-                width: 250px;
-            }
         }
     }
 
@@ -50,9 +43,16 @@ export const AmIAbleStyle = styled.section`
     }
 
     @media (max-width: 425px){
+        .app_limiter {
+            flex-direction: column;
+        }
+
+        .text_container {
+            width: 100%;
+        }
+
         .button_container {
-                flex-direction: column;
-                gap: 30px;
-            }
+            display: flex;
+        }
     }
 `;

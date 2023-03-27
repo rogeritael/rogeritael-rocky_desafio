@@ -1,5 +1,6 @@
 import { AppLimiter } from "../../AppLimiter";
 import { Button } from "../../Button";
+import { ButtonContainer } from "../../ButtonContainer";
 import { GoalCard } from "../../GoalCard";
 import { MaisClientesContainer } from "./styles"
 
@@ -55,6 +56,7 @@ export function MaisClientesSection(){
                     />
                 </div>
             </div>
+            <ButtonContainer />
             
         </AppLimiter>
         </MaisClientesContainer>

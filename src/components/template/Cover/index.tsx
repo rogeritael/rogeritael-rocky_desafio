@@ -3,6 +3,7 @@ import { CoverContainer } from "./styles";
 
 import logo from '../../../assets/logo_synapse.png';
 import { AppLimiter } from "../../AppLimiter";
+import { ButtonContainer } from "../../ButtonContainer";
 
 export function Cover(){
     return(
@@ -19,17 +20,7 @@ export function Cover(){
                 Aprenda no seu próprio ritmo com nossos cursos online de alta qualidade.
                 Aproveite ao máximo seu potencial e alcance seus objetivos educacionais conosco.
             </p>
-
-            <div className="button_container">
-                <Button
-                    text="tenho interesse"
-                    background='transparent'
-                />
-                <Button
-                    text="comprar agora" 
-                    background='#F89D24' 
-                />
-            </div>
+            <ButtonContainer />
         </AppLimiter>
         </CoverContainer>
     );

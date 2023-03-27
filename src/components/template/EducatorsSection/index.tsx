@@ -3,6 +3,7 @@ import { Button } from "../../Button";
 import { EducatorCard } from "../../EducatorCard";
 import { EducatorsSectionStyle } from "./styles";
 import { educators } from "../../../mocks/educators";
+import { ButtonContainer } from "../../ButtonContainer";
 
 export function EducatorsSection(){
     return(
@@ -19,23 +20,8 @@ export function EducatorsSection(){
                             description={educator.description}
                         />
                     ))}
-                    {/* <EducatorCard />
-                    <EducatorCard />
-                    <EducatorCard />
-                    <EducatorCard />
-                    <EducatorCard />
-                    <EducatorCard /> */}
                 </div>
-                <div className="button_container">
-                    <Button
-                        text="Tenho interesse"
-                        background="transparent"
-                    />
-                    <Button
-                        text="Comprar Agora"
-                        background="#F89D24"
-                    />
-                </div>     
+                <ButtonContainer />   
             </EducatorsSectionStyle>
         </AppLimiter>
     )

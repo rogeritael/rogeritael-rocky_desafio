@@ -7,6 +7,10 @@ export const AbilityToLearnStyle = styled.section`
     justify-content: space-evenly;
     align-items: center;
 
+    .button_container {
+        display: none;
+    }
+
     .left_text_container {
         width: 450px;
         padding: 0 20px;
@@ -69,6 +73,9 @@ export const AbilityToLearnStyle = styled.section`
     }
 
     @media(max-width: 425px){
+        .button_container {
+            display: flex;
+        }
         .right_text_container{
 
             div {

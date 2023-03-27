@@ -3,6 +3,7 @@ import { Button } from "../../Button";
 import { Topic } from "../../Topic";
 import { AbilityToLearnStyle } from "./styles";
 import { methodologies } from "../../../mocks/methodologies";
+import { ButtonContainer } from "../../ButtonContainer";
 
 export function AbilityToLearn(){
     return(
@@ -38,6 +39,8 @@ export function AbilityToLearn(){
                         <Topic metodology={methodology.title} content={methodology.description}/>
                     ))}
                 </div>
+
+                <ButtonContainer />
         </AbilityToLearnStyle>
         </AppLimiter>
     )

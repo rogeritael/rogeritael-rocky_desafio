@@ -83,7 +83,6 @@ export const CoverContainer = styled.header`
     }
 
     @media (max-width: 560px){
-            /* padding: 80px 40px; */
         padding-top: 150px;
 
         p.cover_description_text {
@@ -102,15 +101,6 @@ export const CoverContainer = styled.header`
 
         h1.call_to_action_title {
             font-size: var(--t2);
-        }
-
-        .button_container {
-            display: flex;
-            flex-direction: column;
-
-            button {
-                width: 250px;
-            }
         }
 
         p.cover_description_text {

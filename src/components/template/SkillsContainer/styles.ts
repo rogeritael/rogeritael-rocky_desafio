@@ -27,6 +27,10 @@ export const SkillsStyle = styled.section`
         justify-content: center;
     }
 
+    .button_container {
+        display: none;
+    }
+
     .skills_box{
         display: flex;
 
@@ -121,6 +125,14 @@ export const SkillsStyle = styled.section`
     }
 
     @media (max-width: 768px){
+        .app_limiter {
+            flex-direction: column;
+        }
+
+        .button_container {
+            display: flex;
+        }
+
         .skills_box { 
             width: 90%;
             

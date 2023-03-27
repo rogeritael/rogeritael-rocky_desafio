@@ -1,6 +1,7 @@
 import { AppLimiter } from "../../AppLimiter";
 import { SkillsStyle } from "./styles";
 import { skillsMock } from "../../../mocks/skills";
+import { ButtonContainer } from "../../ButtonContainer";
 
 export function SkillsContainer(){
     return(
@@ -29,6 +30,8 @@ export function SkillsContainer(){
                         </div>
                     </div>
                     </div>
+                    
+                    <ButtonContainer />
                 </AppLimiter>
             </SkillsStyle>
     )

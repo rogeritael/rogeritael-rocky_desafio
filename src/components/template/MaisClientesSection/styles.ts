@@ -13,6 +13,10 @@ export const MaisClientesContainer = styled.section`
         align-items: center;
     }
 
+    .button_container {
+        display: none;
+    }
+
     .left_side {
         display: flex;
         flex-direction: column;
@@ -109,6 +113,10 @@ export const MaisClientesContainer = styled.section`
     }
 
     @media (max-width: 640px) {
+
+        .button_container {
+            display: flex;
+        }
 
         .left_side {
             padding: 20px;

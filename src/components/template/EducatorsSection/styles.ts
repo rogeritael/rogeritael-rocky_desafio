@@ -15,11 +15,6 @@ export const EducatorsSectionStyle = styled.section`
         gap: 30px;
     }
 
-    .button_container {
-        width: max-content;
-        margin: 0 auto;
-        padding: 100px 0 125px 0;
-    }
     @media (max-width: 768px) {
         h1.title {
             margin-left: 40px;
@@ -35,15 +30,6 @@ export const EducatorsSectionStyle = styled.section`
 
         .card_chain {
             gap: 0;
-        }
-
-        .button_container {
-            display: flex;
-            flex-direction: column;
-
-            button {
-                width: 250px;
-            }
         }
     }
 `;
