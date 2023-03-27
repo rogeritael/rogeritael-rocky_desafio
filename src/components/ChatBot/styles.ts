@@ -9,7 +9,6 @@ export const ChatBotStyle = styled.div`
     bottom: 80px;
     right: 60px;
     border-radius: 10px;
-    flex: 999;
 
     .chat_image {
         width: 40px;

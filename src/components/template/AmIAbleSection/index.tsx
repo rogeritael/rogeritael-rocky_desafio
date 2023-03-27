@@ -1,9 +1,11 @@
+import { AppLimiter } from "../../AppLimiter";
 import { Button } from "../../Button";
 import { AmIAbleStyle } from "./styles";
 
 export function AmIAbleSection(){
     return(
         <AmIAbleStyle>
+            <AppLimiter>
             <div className="text_container">
                 <h2>Eu estou Apto?</h2>
 
@@ -30,6 +32,7 @@ export function AmIAbleSection(){
                     />
                 </div>
             </div>
+            </AppLimiter>
         </AmIAbleStyle>
     );
 }

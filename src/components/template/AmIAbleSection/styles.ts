@@ -5,9 +5,13 @@ export const AmIAbleStyle = styled.section`
     height: 898px;
     background-image: url(${bg});
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    
+    
+    .app_limiter {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
 
     .text_container {
         width: 394px;

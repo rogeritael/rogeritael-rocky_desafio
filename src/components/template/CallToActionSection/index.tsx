@@ -1,9 +1,11 @@
+import { AppLimiter } from "../../AppLimiter";
 import { Button } from "../../Button";
 import { CallToActionContainer } from "./styles";
 
 export function CallToActionSection(){
     return(
         <CallToActionContainer>
+        <AppLimiter>
             <h1 className="cta">
                 Tome agora a decisão de transformar a sua empresa no mundo digital
             </h1>
@@ -14,6 +16,7 @@ export function CallToActionSection(){
                     background="#F89D24" ///COLOCAR WHITE
                 />
             </div>
+        </AppLimiter>
         </CallToActionContainer>
     )
 }

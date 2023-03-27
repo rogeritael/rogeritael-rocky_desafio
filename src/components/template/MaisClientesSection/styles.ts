@@ -2,12 +2,16 @@ import styled from "styled-components";
 
 export const MaisClientesContainer = styled.section`
     /* background-color: ; */
-    min-height: 759px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    
     background: rgb(61,61,61);
     background: linear-gradient(0deg, rgba(61,61,61,1) 0%, rgba(12,12,12,1) 100%);
+
+    .app_limiter {
+        min-height: 759px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
     .left_side {
         display: flex;
@@ -80,7 +84,10 @@ export const MaisClientesContainer = styled.section`
     }
     
     @media (max-width: 1100px) {
-       flex-direction: column;
+        
+        .app_limiter {
+            flex-direction: column;
+        }
 
         .left_side {
             flex-direction: row;
@@ -115,7 +122,6 @@ export const MaisClientesContainer = styled.section`
             margin: 60px 0;
             grid-template-columns: 250px;
             grid-template-rows: repeat(4, 250px);
-            /* margin-bottom: 97px; */
         }
     }
 

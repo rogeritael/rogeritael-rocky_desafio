@@ -18,8 +18,8 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <HelpButton />
-      <ChatBot />
+      {/* <HelpButton /> */}
+      {/* <ChatBot /> */}
       <Cover />
       <MaisClientesSection />
       <CallToActionSection />

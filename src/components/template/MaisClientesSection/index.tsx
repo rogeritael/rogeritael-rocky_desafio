@@ -5,8 +5,8 @@ import { MaisClientesContainer } from "./styles"
 
 export function MaisClientesSection(){
     return(
-        <AppLimiter>
         <MaisClientesContainer>
+        <AppLimiter>
             <div className="left_side">
                 <div className="mais_clientes_text_container">
                     <h1>Sem <br/> clientes?</h1>
@@ -56,7 +56,7 @@ export function MaisClientesSection(){
                 </div>
             </div>
             
-        </MaisClientesContainer>
         </AppLimiter>
+        </MaisClientesContainer>
     );
 }

@@ -2,12 +2,15 @@ import styled from "styled-components";
 import banner from '../../../assets/Vector.png';
 
 export const CallToActionContainer = styled.section`
-    display: flex;
-    align-items: center;
-    min-height: 365px;
-    position: relative;
     background-color: var(--black1); 
     background-image: url(${banner});
+
+    .app_limiter {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 365px;
+    }
 
     .price_container {
         width: 500px;
@@ -43,8 +46,10 @@ export const CallToActionContainer = styled.section`
     }
 
     @media (max-width: 924px) {
-        flex-direction: column;
-
+        .app_limiter {
+            flex-direction: column;
+        }
+        
         h1.cta {
             text-align: center;
             margin: 75px 15px;
