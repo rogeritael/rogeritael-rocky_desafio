@@ -64,7 +64,7 @@ const subtitleEntry = keyframes`
 
 export const ModalStyle = styled.div<ModalStyleProps>`
     width: 100%;
-    /* height: 100vh; */
+    height: fit-content;
     position: fixed;
     top: 0;
     left: 0;
@@ -75,12 +75,13 @@ export const ModalStyle = styled.div<ModalStyleProps>`
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: none; */
+    display: ${(props) => props.isModalOpen === true ? 'flex' : 'none'};
 
     .modal {
         width: 614px;
         height: 100vh;
-        max-height: 743px;
+        /* min-height: 759px; */
+        /* max-height: 743px; */
         background-color: var(--medium-gray1);
         position: relative;
         display: flex;
@@ -123,6 +124,7 @@ export const ModalStyle = styled.div<ModalStyleProps>`
             margin: 0 90px;
             text-align: center;
             margin-bottom: 40px;
+            font-size: 16px;
             animation: ${subtitleEntry} 1.5s ease-out;
         }
 
@@ -137,6 +139,7 @@ export const ModalStyle = styled.div<ModalStyleProps>`
                 height: 41px;
                 padding-left: 20px;
                 border-radius: 4px;
+                color: #333;
                 border: 1px solid var(--orange);
 
                 &::placeholder {
@@ -150,6 +153,7 @@ export const ModalStyle = styled.div<ModalStyleProps>`
                     padding: 0;
                     display: block;
                     border: 1px solid var(--orange);
+                    accent-color: var(--orange);
                 }
 
                 &.leftEntry {
@@ -177,6 +181,11 @@ export const ModalStyle = styled.div<ModalStyleProps>`
             }
         }
 
-        
+    }
+
+    @media (max-width: 425px){
+        .modal p.description {
+            margin: 0 40px 20px 40px;
+        }
     }
 `;

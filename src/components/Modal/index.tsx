@@ -4,12 +4,16 @@ import { GrClose } from 'react-icons/gr';
 import { useState } from 'react';
 
 export function Modal(){
-    const isModalOpen = useState(true)
+    const [isModalOpen, setIsModalOpen] = useState(true);
+
+    function closeModal(){
+        setIsModalOpen(false);
+    }
 
     return(
         <ModalStyle isModalOpen={isModalOpen}>
             <div className="modal modalEntryAnimation">
-                <GrClose />
+                <GrClose onClick={() => closeModal()} />
 
                 <h1>Tem interesse?</h1>
                 <p className="description">Assine a nossa newsletter para ficar por dentro quando abrirmos uma nova turma com desconto de pré-venda</p>
