@@ -64,7 +64,7 @@ const subtitleEntry = keyframes`
 
 export const ModalStyle = styled.div<ModalStyleProps>`
     width: 100%;
-    height: fit-content;
+    /* height: fit-content; */
     position: fixed;
     top: 0;
     left: 0;
@@ -76,10 +76,12 @@ export const ModalStyle = styled.div<ModalStyleProps>`
     justify-content: center;
     align-items: center;
     display: ${(props) => props.isModalOpen === true ? 'flex' : 'none'};
+    overflow: auto;
 
     .modal {
         width: 614px;
-        height: 100vh;
+        height: fit-content;
+
         /* min-height: 759px; */
         /* max-height: 743px; */
         background-color: var(--medium-gray1);
@@ -94,7 +96,7 @@ export const ModalStyle = styled.div<ModalStyleProps>`
             font-size: 30px;
             position: absolute;
             right: 40px;
-            top: 40px;
+            top: 60px;
             color: #ccc;
             cursor: pointer;
             display: flex;
@@ -176,7 +178,7 @@ export const ModalStyle = styled.div<ModalStyleProps>`
             }
 
             button {
-                margin: 20px 0 0 0;
+                margin: 20px 0;
                 width: 230px;
             }
         }
@@ -184,8 +186,21 @@ export const ModalStyle = styled.div<ModalStyleProps>`
     }
 
     @media (max-width: 425px){
-        .modal p.description {
-            margin: 0 40px 20px 40px;
-        }
+        .modal {
+            svg {
+                right: 20px;
+                font-size: 25px;
+                top: 70px;
+                margin-top: 50px;
+            }
+
+            h1 {
+                margin-top: 180px;
+            }
+
+            p.description {
+                margin: 0 40px 20px 40px;
+            }
+        } 
     }
 `;

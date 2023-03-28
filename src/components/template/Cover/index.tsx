@@ -5,7 +5,11 @@ import logo from '../../../assets/logo_synapse.png';
 import { AppLimiter } from "../../AppLimiter";
 import { ButtonContainer } from "../../ButtonContainer";
 
-export function Cover(){
+interface CoverProps {
+    openModal: () => void,
+}
+
+export function Cover({ openModal }: CoverProps){
     return(
         <CoverContainer>
             <AppLimiter className="limiter">
@@ -20,7 +24,7 @@ export function Cover(){
                 Aprenda no seu próprio ritmo com nossos cursos online de alta qualidade.
                 Aproveite ao máximo seu potencial e alcance seus objetivos educacionais conosco.
             </p>
-            <ButtonContainer />
+            <ButtonContainer openModal={openModal}/>
         </AppLimiter>
         </CoverContainer>
     );

@@ -3,7 +3,11 @@ import { Button } from "../../Button";
 import { ButtonContainer } from "../../ButtonContainer";
 import { AmIAbleStyle } from "./styles";
 
-export function AmIAbleSection(){
+interface AmIAbleSection {
+    openModal: () => void,
+}
+
+export function AmIAbleSection({ openModal }: AmIAbleSection){
     return(
         <AmIAbleStyle>
             <AppLimiter>
@@ -23,7 +27,7 @@ export function AmIAbleSection(){
                 </p>
 
             </div>
-            <ButtonContainer />
+            <ButtonContainer openModal={openModal} />
             </AppLimiter>
         </AmIAbleStyle>
     );

@@ -1,14 +1,13 @@
 import { Button } from "../Button";
 import { ModalStyle } from "./styles";
 import { GrClose } from 'react-icons/gr';
-import { useState } from 'react';
 
-export function Modal(){
-    const [isModalOpen, setIsModalOpen] = useState(true);
+interface ModalProps {
+    isModalOpen: boolean,
+    closeModal: () => void
+}
 
-    function closeModal(){
-        setIsModalOpen(false);
-    }
+export function Modal({isModalOpen, closeModal}: ModalProps){
 
     return(
         <ModalStyle isModalOpen={isModalOpen}>
@@ -28,6 +27,7 @@ export function Modal(){
                         <p>Li e aceito os <a href="#">termos de uso</a></p>
                     </span>
                     <Button
+                        onClick={() => alert('ee')} //!!!!!!!!!!!!!!
                         background="#F89D24"
                         text="declarar interesse"
                     />

@@ -3,7 +3,7 @@ import { SkillsStyle } from "./styles";
 import { skillsMock } from "../../../mocks/skills";
 import { ButtonContainer } from "../../ButtonContainer";
 
-export function SkillsContainer(){
+export function SkillsContainer({ openModal }: { openModal: () => void }){
     return(
         
             <SkillsStyle>
@@ -41,7 +41,7 @@ export function SkillsContainer(){
                     </div>
                     </div>
                     
-                    <ButtonContainer />
+                    <ButtonContainer openModal={openModal} />
                 </AppLimiter>
             </SkillsStyle>
     )

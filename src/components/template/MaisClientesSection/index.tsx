@@ -4,7 +4,11 @@ import { ButtonContainer } from "../../ButtonContainer";
 import { GoalCard } from "../../GoalCard";
 import { MaisClientesContainer } from "./styles"
 
-export function MaisClientesSection(){
+interface MaisClientesSectionProps {
+    openModal: () => void,
+}
+
+export function MaisClientesSection({ openModal }: MaisClientesSectionProps){
     return(
         <MaisClientesContainer>
         <AppLimiter>
@@ -26,10 +30,12 @@ export function MaisClientesSection(){
                     <p className="price">R$ 5.000,00</p>
                     <div className="button_container">
                         <Button
+                            onClick={openModal}
                             background="transparent"
                             text="tenho interesse"
                         />
                         <Button
+                            onClick={() => alert('comprar')}
                             background="#F89D24"
                             text="comprar agora"
                         />
@@ -56,7 +62,7 @@ export function MaisClientesSection(){
                     />
                 </div>
             </div>
-            <ButtonContainer />
+            <ButtonContainer openModal={openModal} />
             
         </AppLimiter>
         </MaisClientesContainer>

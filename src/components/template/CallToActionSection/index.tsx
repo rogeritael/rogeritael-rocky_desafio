@@ -2,7 +2,7 @@ import { AppLimiter } from "../../AppLimiter";
 import { Button } from "../../Button";
 import { CallToActionContainer } from "./styles";
 
-export function CallToActionSection(){
+export function CallToActionSection({openModal}: { openModal: () => void }){
     return(
         <CallToActionContainer>
         <AppLimiter>
@@ -12,6 +12,7 @@ export function CallToActionSection(){
             <div className="price_container">
                 <p className="price">R$ 5.000,00</p>
                 <Button
+                    onClick={openModal}
                     text="fazer o curso"
                     background="#F89D24" ///COLOCAR WHITE
                 />

@@ -5,7 +5,11 @@ import { EducatorsSectionStyle } from "./styles";
 import { educators } from "../../../mocks/educators";
 import { ButtonContainer } from "../../ButtonContainer";
 
-export function EducatorsSection(){
+interface EducatorSectionProps {
+    openModal: () => void
+}
+
+export function EducatorsSection({ openModal }: EducatorSectionProps){
     return(
         <AppLimiter>
             <EducatorsSectionStyle>
@@ -21,7 +25,7 @@ export function EducatorsSection(){
                         />
                     ))}
                 </div>
-                <ButtonContainer />   
+                <ButtonContainer openModal={openModal} />   
             </EducatorsSectionStyle>
         </AppLimiter>
     )

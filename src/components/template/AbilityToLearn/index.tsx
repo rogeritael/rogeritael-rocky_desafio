@@ -5,7 +5,11 @@ import { AbilityToLearnStyle } from "./styles";
 import { methodologies } from "../../../mocks/methodologies";
 import { ButtonContainer } from "../../ButtonContainer";
 
-export function AbilityToLearn(){
+interface AbilityToLearn {
+    openModal: () => void,
+}
+
+export function AbilityToLearn({ openModal }: AbilityToLearn){
     return(
         <AppLimiter>
         <AbilityToLearnStyle>
@@ -29,8 +33,8 @@ export function AbilityToLearn(){
                         </p>
                     </div>
                     <div className="button_container">
-                        <Button background="transparent" text="tenho interesse" />
-                        <Button background="#F89D24" text="comprar agora" />
+                        <Button onClick={() => openModal} background="transparent" text="tenho interesse" />
+                        <Button onClick={() => openModal} background="#F89D24" text="comprar agora" />
 
                     </div>
                 </div>
@@ -40,7 +44,7 @@ export function AbilityToLearn(){
                     ))}
                 </div>
 
-                <ButtonContainer />
+                <ButtonContainer openModal={openModal}/>
         </AbilityToLearnStyle>
         </AppLimiter>
     )

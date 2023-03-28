@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ChatBot } from './components/ChatBot';
 import { HelpButton } from './components/HelpButton';
 import { Modal } from './components/Modal';
@@ -15,21 +15,32 @@ import { TestmonialsSection } from './components/template/TestimonialsSection';
 
 import { GlobalStyle } from './GlobalStyles';
 
+
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(true);
+
+  function openModal(){
+    setIsModalOpen(true);
+  }
+
+  function closeModal(){
+    setIsModalOpen(false)
+  }
+
   return (
     <>
       <GlobalStyle />
       {/* <HelpButton /> */}
       {/* <ChatBot /> */}
-      <Modal />
-      <Cover />
-      <MaisClientesSection />
-      <CallToActionSection />
-      {/* <SkillsContainer /> */}
-      <EducatorsSection />
+      <Modal isModalOpen={isModalOpen} closeModal={closeModal} />
+      <Cover openModal={openModal} />
+      <MaisClientesSection openModal={openModal} />
+      <CallToActionSection openModal={openModal} />
+      {/* <SkillsContainer openModal={openModal} /> */}
+      <EducatorsSection openModal={openModal} />
       <TestmonialsSection />
-      <AmIAbleSection />
-      <AbilityToLearn />
+      <AmIAbleSection openModal={openModal} />
+      <AbilityToLearn openModal={openModal} />
       <Footer />
     </>
   );
