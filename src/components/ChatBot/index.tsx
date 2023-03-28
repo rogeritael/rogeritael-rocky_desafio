@@ -1,10 +1,21 @@
 import { ChatBotStyle } from "./styles";
 import { GrClose } from 'react-icons/gr';
+import { useState } from "react";
 
+interface ChatbotProps {
+    isOpen: boolean,
+    setIsChatbotOpen: React.Dispatch<boolean>
+}
 
-export function ChatBot(){
+export function ChatBot({ isOpen, setIsChatbotOpen }: ChatbotProps){
+    // const [isChatOpen, setIsChatOpen] = useState(true);
+
+    function closeChat(){
+        setIsChatbotOpen(false);
+    }
+
     return(
-        <ChatBotStyle>
+        <ChatBotStyle isOpen={isOpen}>
             <div className="chat_bot">
                 <div className="chatbot_header">
                     <div className="chat_info">
@@ -14,11 +25,10 @@ export function ChatBot(){
                             <p>Online agora</p>
                         </div>
                     </div>
-                    <GrClose />
+                    <GrClose onClick={() => closeChat()}/>
                 </div>
                 <div className="chat_body">
                     <div className="chat_message">
-                        <span className="chat_image"></span>
                         <div className="chat_message_container">
                             <p className="message">Olá, meu nome é Moira</p>
                             <p>Como posso te ajudar?</p>

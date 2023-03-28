@@ -1,7 +1,24 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import chatbot_image from '../../assets/chatbot_moira.jpg';
 
-export const ChatBotStyle = styled.div`
+interface ChatbotProps {
+    isOpen?: boolean
+}
+
+const entry = keyframes`
+    from {
+        scale: 0.1;
+        right: -70px;
+        bottom: -90px;
+    }
+    to{
+        scale: 1;
+        right: 60px;
+        border: 80px;
+    }
+`;
+
+export const ChatBotStyle = styled.div<ChatbotProps>`
     width: 320px;
     height: 400px;
     background-color: #fff;
@@ -9,6 +26,8 @@ export const ChatBotStyle = styled.div`
     bottom: 80px;
     right: 60px;
     border-radius: 10px;
+    animation: ${entry} 200ms ease-in-out;
+    display: ${(props) => props.isOpen === true ? 'block' : 'none'} ;
 
     .chat_image {
         width: 40px;
@@ -80,15 +99,9 @@ export const ChatBotStyle = styled.div`
 
     .chat_body {
         /* color: #333; */
-
+        
         .chat_message {
-            .chat_image {
-                background-color: #000;
-                width: 40px;
-                height: 40px;
-                border: 2px solid red;
-            }
-
+            padding: 10px;
             p {
                 background-color: #e6e6e6;
                 width: fit-content;
@@ -99,10 +112,9 @@ export const ChatBotStyle = styled.div`
             }
 
             ul.options {
-                padding: 10px;
+                margin-top: 20px;
                 li {
                     border: 2px solid var(--orange);
-                    width: fit-content;
                     width: 100%;
                     text-align: center;
                     padding: 10px;

@@ -1,9 +1,19 @@
 import { HelpButtonStyle } from "./styles";
 
-export function HelpButton(){
+interface HelpButtonProps {
+    isChatbotOpen: boolean,
+    setIsChatbotOpen: React.Dispatch<boolean>
+}
+
+export function HelpButton({ isChatbotOpen, setIsChatbotOpen }: HelpButtonProps){
+    
+    function clickHandler(){
+        isChatbotOpen ? setIsChatbotOpen(false) : setIsChatbotOpen(true);
+    }
+
     return (
-        <HelpButtonStyle>
-            <div className="text_chain">
+        <HelpButtonStyle onClick={() => clickHandler()}>
+            <div className="text_chain" >
                 <p>?</p>
             </div>
         </HelpButtonStyle>

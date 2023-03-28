@@ -17,10 +17,15 @@ import { GlobalStyle } from './GlobalStyles';
 
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
 
   function openModal(){
     setIsModalOpen(true);
+  }
+
+  function openChat(){
+    setIsChatbotOpen(true);
   }
 
   function closeModal(){
@@ -30,8 +35,6 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      {/* <HelpButton /> */}
-      {/* <ChatBot /> */}
       <Modal isModalOpen={isModalOpen} closeModal={closeModal} />
       <Cover openModal={openModal} />
       <MaisClientesSection openModal={openModal} />
@@ -42,6 +45,9 @@ function App() {
       <AmIAbleSection openModal={openModal} />
       <AbilityToLearn openModal={openModal} />
       <Footer />
+
+      <ChatBot isOpen={isChatbotOpen} setIsChatbotOpen={setIsChatbotOpen}/>
+      <HelpButton isChatbotOpen={isChatbotOpen} setIsChatbotOpen={setIsChatbotOpen}/>
     </>
   );
 }

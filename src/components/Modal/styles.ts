@@ -76,12 +76,11 @@ export const ModalStyle = styled.div<ModalStyleProps>`
     justify-content: center;
     align-items: center;
     display: ${(props) => props.isModalOpen === true ? 'flex' : 'none'};
-    overflow: auto;
-
+    /* overflow: hidden; */
     .modal {
         width: 614px;
         height: fit-content;
-
+        /* overflow: hidden; */
         /* min-height: 759px; */
         /* max-height: 743px; */
         background-color: var(--medium-gray1);

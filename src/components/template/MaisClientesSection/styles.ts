@@ -55,7 +55,7 @@ export const MaisClientesContainer = styled.section`
             .price {
                 margin-left: auto;
                 text-align: right;
-                padding-right: 115px;
+                padding-right: 90px;
                 font-weight: bold;
             }
 
