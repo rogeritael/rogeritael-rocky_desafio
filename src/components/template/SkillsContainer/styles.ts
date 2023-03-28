@@ -18,7 +18,7 @@ export const SkillsStyle = styled.section`
     height: 611px;
     width: 100%;
     background-image: url(${skillbg});
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
 
     .app_limiter {
@@ -26,8 +26,14 @@ export const SkillsStyle = styled.section`
         align-items: center;
         justify-content: center;
     }
-
+    
     .button_container {
+        display: none;
+    }
+
+    .title {
+        margin: 120px 20px 20px 30px;
+        font-size: var(--t2);
         display: none;
     }
 
@@ -150,6 +156,14 @@ export const SkillsStyle = styled.section`
 
         .skills_box .skills_description_container {
             display: none;
+        }
+    }
+
+    @media (max-width: 425px) {
+        min-height: 800px;
+
+        .title {
+            display: block;
         }
     }
 `

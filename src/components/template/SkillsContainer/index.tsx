@@ -8,12 +8,22 @@ export function SkillsContainer(){
         
             <SkillsStyle>
                 <AppLimiter>
+                    {/* <div className="title"> */}
+                        <h1 className="title">
+                            O que você aprenderá
+                        </h1>
+                    {/* </div> */}
+
                     <div className="skills_box">
                     <div className="skills_list_container">
                         <ul>
                             {
                                 skillsMock.map(skill => (
-                                    <li id={skill.id}>{skill.title}</li>
+                                    <li id={skill.id}>
+                                        <p>{skill.title}</p>
+                                        {/* <div>{skill.content}</div> */}
+                                    </li>
+
                                 ))
                             }
                         </ul>

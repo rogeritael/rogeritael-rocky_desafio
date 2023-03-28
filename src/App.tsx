@@ -1,6 +1,7 @@
 import React from 'react';
 import { ChatBot } from './components/ChatBot';
 import { HelpButton } from './components/HelpButton';
+import { Modal } from './components/Modal';
 import { AbilityToLearn } from './components/template/AbilityToLearn';
 import { AmIAbleSection } from './components/template/AmIAbleSection';
 import { CallToActionSection } from './components/template/CallToActionSection';
@@ -20,10 +21,11 @@ function App() {
       <GlobalStyle />
       {/* <HelpButton /> */}
       {/* <ChatBot /> */}
+      <Modal />
       <Cover />
       <MaisClientesSection />
       <CallToActionSection />
-      <SkillsContainer />
+      {/* <SkillsContainer /> */}
       <EducatorsSection />
       <TestmonialsSection />
       <AmIAbleSection />
