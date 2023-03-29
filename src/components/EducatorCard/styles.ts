@@ -4,8 +4,8 @@ export const EducatorCardStyle = styled.div`
     padding: 20px;
     border: 1px solid #fff;
     border-radius: 5px;
-    width: max-content;
-    height: max-content;
+    /* width: max-content; */
+    /* height: max-content; */
 
     .educator_profile {
         width: 311.67px;
@@ -51,6 +51,7 @@ export const EducatorCardStyle = styled.div`
     }
 
     @media (max-width: 375px) {
+        margin: -40px 0;
         scale: .8;
         .educator_profile {
         }

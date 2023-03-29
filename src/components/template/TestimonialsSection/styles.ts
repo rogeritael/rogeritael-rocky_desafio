@@ -220,10 +220,17 @@ export const TestimonialsStyle = styled.section`
     }
 
     @media(max-width: 425px){
+        height: 600px;
+        overflow-x: hidden;
+
         .testimonial_box .testimonial_text_container .testimonial {
 
             p {
                 font-size: 25px;
+            }
+
+            h3 {
+                font-size: 15px;
             }
         }
     }

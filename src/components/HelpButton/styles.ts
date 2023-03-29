@@ -42,4 +42,8 @@ export const HelpButtonStyle = styled.div`
             transform: rotate(360deg);
         }
     }
+
+    @media(max-width: 768px){
+        display: none;
+    }
 `;

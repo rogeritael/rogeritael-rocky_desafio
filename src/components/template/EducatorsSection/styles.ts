@@ -24,12 +24,10 @@ export const EducatorsSectionStyle = styled.section`
     @media (max-width: 425px) {
 
         h1.title {
-            margin-left: 20px;
-            margin-bottom: 10px;
+            /* margin-left: 20px; */
+            /* margin-bottom: 10px; */
+            margin: 50px 20px 10px 10px;
         }
 
-        .card_chain {
-            gap: 0;
-        }
     }
 `;
