@@ -18,24 +18,12 @@ const closeButtonEntry = keyframes`
     }
 `
 
-const leftEntry = keyframes`
+const inputEntry = keyframes`
     from {
-        transform: translateX(-30px);
-        opacity: 0.4;
+        opacity: 0;
     }
     to {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-`
-
-const rightEntry = keyframes`
-    from {
-        transform: translateX(30px);
-        opacity: 0.4;
-    }
-    to {
-        transform: translateX(0px);
+        /* transform: translateX(0px); */
         opacity: 1;
     }
 `
@@ -155,14 +143,23 @@ export const ModalStyle = styled.div<ModalStyleProps>`
                     display: block;
                     border: 1px solid var(--orange);
                     accent-color: var(--orange);
+                    opacity: 0;
                 }
 
-                &.leftEntry {
-                    animation: ${leftEntry} 800ms ease-in-out;
+                &.inputEntry {
+                    animation: ${inputEntry} 1900ms ease-in-out forwards;
                 }
 
-                &.rightEntry {
-                    animation: ${rightEntry} 800ms ease-in-out;
+                &.delay1 {
+                    animation-duration: 1600ms;
+                }
+
+                &.delay2 {
+                    animation-duration: 1300ms;
+                }
+
+                &.delay3 {
+                    animation-duration: 1000ms;
                 }
             }
 
@@ -172,7 +169,7 @@ export const ModalStyle = styled.div<ModalStyleProps>`
                 align-items: center;
                 
                 p {
-                    animation: ${rightEntry} 500ms ease-out;
+                    animation: ${inputEntry} 500ms ease-out;
                 }
             }
 

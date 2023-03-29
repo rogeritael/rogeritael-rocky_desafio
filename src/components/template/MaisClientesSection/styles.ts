@@ -22,6 +22,7 @@ export const MaisClientesContainer = styled.section`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        /* margin-bottom: -70px; */
 
         .mais_clientes_text_container {
             display: flex;
@@ -76,7 +77,6 @@ export const MaisClientesContainer = styled.section`
     }
 
     .right_side {
-        margin: 0;
     
         .mais_clientes_card_container {
             display: grid;
@@ -100,7 +100,7 @@ export const MaisClientesContainer = styled.section`
         }
 
         .right_side {
-            margin: 60px 0;
+            /* margin: 60px 0; */
             /* margin-bottom: 97px; */
         }
     }

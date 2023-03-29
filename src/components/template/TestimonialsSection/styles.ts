@@ -146,33 +146,19 @@ export const TestimonialsStyle = styled.section`
         .testimonial_controllers_box {
             margin-top: 80px;
 
-            .plus {
-                width: 25px;
-                height: 3px;
-                background-color: #fff;
-                border-radius: 2px;
-                position: relative;
-
-                &::before {
-                    content: '';
-                    width: 25px;
-                    height: 3px;
-                    background-color: #fff;
-                    border-radius: 2px;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    transform: rotate(90deg);
-                    animation: ${activePlus} 500ms ease-in-out forwards;
-                }
-            }
-
-            img {
-                width: 15px;
-                height: 15px;
+            svg {
+                font-size: 25px;
                 margin: 0 15px;
                 cursor: pointer;
                 transition: 150ms ease-in-out;
+
+                &.disabled {
+                    opacity: 0.4;
+                    cursor: auto;
+                    &:hover {
+                        scale: 1;
+                    }
+                }
 
                 &:hover {
                     scale: 1.3;
@@ -222,6 +208,11 @@ export const TestimonialsStyle = styled.section`
     @media(max-width: 425px){
         height: 600px;
         overflow-x: hidden;
+
+        .slider_container .testimonial_controllers_box svg {
+            font-size: 25px;
+            margin: 0 25px;
+        }
 
         .testimonial_box .testimonial_text_container .testimonial {
 

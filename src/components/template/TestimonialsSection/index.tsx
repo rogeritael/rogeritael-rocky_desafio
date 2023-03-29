@@ -4,6 +4,7 @@ import leftArrow from '../../../assets/left_arrow_controller.png'
 import rightArrow from '../../../assets/right_arrow_controller.png'
 import plus from '../../../assets/plus.png'
 import { useState } from "react";
+import { AiOutlinePlus } from 'react-icons/ai';
 
 const testimonials = [
     {
@@ -73,11 +74,10 @@ export function TestmonialsSection(){
                         <img src={rightArrow} onClick={() => next()} alt="botão avançar" className="testimonial_arrow_controller"/>
                     </div>
                     <div className="testimonial_controllers_box">
-                        <img src={plus} onClick={() => selectTestimonial(1)} alt=""/>
-                        <img src={plus} onClick={() => selectTestimonial(2)} alt=""/>
-                        <img src={plus} onClick={() => selectTestimonial(3)} alt=""/>
-                        <img src={plus} onClick={() => selectTestimonial(4)} alt=""/>
-                        <div className="plus"></div>
+                        <AiOutlinePlus className={`${activeTestimonial === 1 ? 'disabled' : ''}`} onClick={() => selectTestimonial(1)} />
+                        <AiOutlinePlus className={`${activeTestimonial === 2 ? 'disabled' : ''}`} onClick={() => selectTestimonial(2)} />
+                        <AiOutlinePlus className={`${activeTestimonial === 3 ? 'disabled' : ''}`} onClick={() => selectTestimonial(3)} />
+                        <AiOutlinePlus className={`${activeTestimonial === 4 ? 'disabled' : ''}`} onClick={() => selectTestimonial(4)} />
                     </div>
                 </div>
             </AppLimiter>
