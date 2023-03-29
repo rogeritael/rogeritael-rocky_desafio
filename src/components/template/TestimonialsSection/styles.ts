@@ -79,22 +79,20 @@ export const TestimonialsStyle = styled.section`
         .testimonial_box {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
 
             .testimonial_text_container {
                 /* border: 1px solid red; */
-                height: 300px;
+                /* height: 300px; */
                 margin: 0 60px;
                 width: 800px;
-                position: relative;
-                top: 0;
             }
             .testimonial{
                 /* margin: 0 60px; */
-                position: absolute;
+                /* position: absolute; */
+                margin: 0 60px;
                 display: block;
-                width: 800px;
-                border: 1px solid red;
+                
 
                 &.active {
                     p, h3 {
