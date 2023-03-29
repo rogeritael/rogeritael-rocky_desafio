@@ -77,6 +77,7 @@ export function TestmonialsSection(){
                         <img src={plus} onClick={() => selectTestimonial(2)} alt=""/>
                         <img src={plus} onClick={() => selectTestimonial(3)} alt=""/>
                         <img src={plus} onClick={() => selectTestimonial(4)} alt=""/>
+                        <div className="plus"></div>
                     </div>
                 </div>
             </AppLimiter>

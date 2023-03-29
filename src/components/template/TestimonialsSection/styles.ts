@@ -29,6 +29,12 @@ const textEntry = keyframes`
     }
 `
 
+const activePlus = keyframes`
+    to {
+        transform: rotate(0);
+    }
+`;
+
 const titleEntry = keyframes`
     from {
         opacity: 0.4;
@@ -42,7 +48,11 @@ const titleEntry = keyframes`
 export const TestimonialsStyle = styled.section`
     height: 768px;
     background-image: url(${bg});
+    background-size: cover;
     padding: 50px;
+    display: flex;
+    align-items: center;
+
 
     .slider_container {
         width: 100%;
@@ -136,6 +146,27 @@ export const TestimonialsStyle = styled.section`
         .testimonial_controllers_box {
             margin-top: 80px;
 
+            .plus {
+                width: 25px;
+                height: 3px;
+                background-color: #fff;
+                border-radius: 2px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    width: 25px;
+                    height: 3px;
+                    background-color: #fff;
+                    border-radius: 2px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: rotate(90deg);
+                    animation: ${activePlus} 500ms ease-in-out forwards;
+                }
+            }
+
             img {
                 width: 15px;
                 height: 15px;
@@ -151,7 +182,7 @@ export const TestimonialsStyle = styled.section`
     }
 
     @media (max-width: 1024px){
-        .slider_container .testimonial_box .testimonial {
+        .slider_container .testimonial_box .testimonial_text_container {
             text-align: center;
             width: 600px;
             margin: 0 30px;
@@ -167,13 +198,32 @@ export const TestimonialsStyle = styled.section`
             
             }
 
-            .testimonial {
+            .testimonial_text_container {
                 width: 100%;
                 margin: 0 10px;
 
                 h3 {
                     text-align: center;
                 }
+            }
+        }
+    }
+
+    @media (max-width: 900px){
+        .testimonial_box .testimonial_text_container .testimonial {
+            margin: 0;
+
+            p {
+                font-size: 35px;
+            }
+        } 
+    }
+
+    @media(max-width: 425px){
+        .testimonial_box .testimonial_text_container .testimonial {
+
+            p {
+                font-size: 25px;
             }
         }
     }
