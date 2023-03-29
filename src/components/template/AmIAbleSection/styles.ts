@@ -34,6 +34,7 @@ export const AmIAbleStyle = styled.section`
 
     @media (max-width: 768px){
         justify-content: center;
+        /* height: ; */
 
         .text_container {
             margin: 0;
@@ -49,10 +50,24 @@ export const AmIAbleStyle = styled.section`
 
         .text_container {
             width: 100%;
+
+            h2 {
+                font-size: var(--t1);
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 30px;
+            }
         }
 
         .button_container {
             display: flex;
         }
+    }
+
+    @media (max-width: 370px){
+        height: fit-content;
     }
 `;

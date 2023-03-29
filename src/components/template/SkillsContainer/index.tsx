@@ -1,48 +1,42 @@
-import { AppLimiter } from "../../AppLimiter";
-import { SkillsStyle } from "./styles";
+import { useState } from "react";
 import { skillsMock } from "../../../mocks/skills";
+import { AppLimiter } from "../../AppLimiter";
+import { Button } from "../../Button";
 import { ButtonContainer } from "../../ButtonContainer";
+import { SkillsStyle } from "./styles";
 
-export function SkillsContainer({ openModal }: { openModal: () => void }){
+export function SkillsContainer(){
+    const [content, setContent] = useState(skillsMock[0].content);
+
+    function handleClick(content: string){
+        setContent(content);
+    }
+
     return(
-        
-            <SkillsStyle>
-                <AppLimiter>
-                    {/* <div className="title"> */}
-                        <h1 className="title">
-                            O que você aprenderá
-                        </h1>
-                    {/* </div> */}
-
-                    <div className="skills_box">
-                    <div className="skills_list_container">
-                        <ul>
-                            {
-                                skillsMock.map(skill => (
-                                    <li id={skill.id}>
-                                        <p>{skill.title}</p>
-                                        {/* <div>{skill.content}</div> */}
-                                    </li>
-
-                                ))
-                            }
-                        </ul>
+        <SkillsStyle>
+            <AppLimiter>
+                <h1>O que você vai Aprender</h1>
+                <div className="skills">
+                    <div className="header">
+                        {
+                            skillsMock.map((skill) => (
+                                <div className="single_skill">
+                                    <h2 onClick={() => handleClick(skill.content)}>{skill.title}</h2>
+                                    <p className="description">{skill.content}</p>
+                                </div>
+                            ))
+                        }
                     </div>
-                    <div className="skills_description_container">
-                        <p className="skill_description">
-                            Ao terminar o curso você saberá planejar e implementar uma estratégia de marketing digital
-                             eficaz para alcançar os objetivos de negócios. Os alunos aprenderão a identificar o 
-                             público-alvo, definir as metas, escolher as táticas corretas e avaliar os resultados.
-                        </p>
-                        <div className="button_container">
-                            <button >TENHO INTERESSE</button>
-                            <button className="purchase_now_button">COMPRE AGORA</button>
+                    <div className="body">
+                        <p>{content}</p>
+                        <div className="buttons">
+                            <input type="button" value="TENHO INTERESSE" />
+                            <input type="button" value="COMPRAR AGORA" />
                         </div>
                     </div>
-                    </div>
-                    
-                    <ButtonContainer openModal={openModal} />
-                </AppLimiter>
-            </SkillsStyle>
+                </div>
+                <ButtonContainer openModal={() => alert()} />
+            </AppLimiter>
+        </SkillsStyle>
     )
 }
