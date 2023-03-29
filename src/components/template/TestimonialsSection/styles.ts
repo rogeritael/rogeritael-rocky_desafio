@@ -18,6 +18,27 @@ const bottomArrowAnimation = keyframes`
     }
 `
 
+const textEntry = keyframes`
+    from {
+        opacity: 0.4;
+        scale: 0.7;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+`
+
+const titleEntry = keyframes`
+    from {
+        opacity: 0.4;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+`
 export const TestimonialsStyle = styled.section`
     height: 768px;
     background-image: url(${bg});
@@ -60,13 +81,35 @@ export const TestimonialsStyle = styled.section`
             align-items: center;
             justify-content: center;
 
-            .testimonial{
+            .testimonial_text_container {
+                /* border: 1px solid red; */
+                height: 300px;
                 margin: 0 60px;
                 width: 800px;
+                position: relative;
+                top: 0;
+            }
+            .testimonial{
+                /* margin: 0 60px; */
+                position: absolute;
+                display: block;
+                width: 800px;
+                border: 1px solid red;
+
+                &.active {
+                    p, h3 {
+                        display: block;
+                    }
+                }
+
+                p, h3 {
+                    display: none;
+                }
 
                 p {
                     font-size: var(--t2);
                     margin-bottom: 30px;
+                    animation: ${textEntry} 500ms ease-in-out;
                 }
 
                 h3 {
@@ -74,6 +117,7 @@ export const TestimonialsStyle = styled.section`
                     color: var(--orange);
                     text-align: right;
                     font-size: var(--tbody1);
+                    animation: ${titleEntry} 500ms ease-in-out;
                 }
             }
 
