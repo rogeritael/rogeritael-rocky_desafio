@@ -32,7 +32,7 @@ export function SkillsContainer({ openModal }: SkillsContainerProps){
                         {
                             skillsMock.map((skill) => (
                                 <div className={`single_skill ${skill.id === activeSkill ? 'active' : ''} `}>
-                                    <h2 onClick={() => handleClick({content: skill.content, id: skill.id})}>{skill.title}</h2>
+                                    <h2 onClick={() => handleClick({content: skill.content, id: skill.id})} data-aos="fade-right">{skill.title}</h2>
                                     {skill.id === activeSkill &&(
                                         <p className="description">{skill.content}</p>
                                     )}
@@ -41,7 +41,7 @@ export function SkillsContainer({ openModal }: SkillsContainerProps){
                         }
                     </div>
                     <div className="body">
-                        <p>{content}</p>
+                        <p data-aos="fade-left">{content}</p>
                         <div className="buttons">
                             <input type="button" onClick={() => openModal()} value="TENHO INTERESSE" />
                             <input type="button" value="COMPRAR AGORA" />

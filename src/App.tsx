@@ -1,3 +1,4 @@
+import Aos from 'aos';
 import React, { useState } from 'react';
 import { ChatBot } from './components/ChatBot';
 import { HelpButton } from './components/HelpButton';
@@ -9,24 +10,25 @@ import { Cover } from './components/template/Cover';
 import { CoverContainer } from './components/template/Cover/styles';
 import { EducatorsSection } from './components/template/EducatorsSection';
 import { Footer } from './components/template/Footer';
-import { MaisClientesSection } from './components/template/MaisClientesSection';
+import { NoCustomersSection } from './components/template/NoCustomersSection';
 import { SkillsContainer } from './components/template/SkillsContainer';
 import { TestmonialsSection } from './components/template/TestimonialsSection';
+import 'aos/dist/aos.css';
 
 import { GlobalStyle } from './GlobalStyles';
-
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
+  Aos.init({ duration: 1200 });
 
   function openModal(){
     setIsModalOpen(true);
   }
 
-  function openChat(){
-    setIsChatbotOpen(true);
-  }
+  // function openChat(){
+  //   setIsChatbotOpen(true);
+  // }
 
   function closeModal(){
     setIsModalOpen(false)
@@ -37,7 +39,7 @@ function App() {
       <GlobalStyle />
       <Modal isModalOpen={isModalOpen} closeModal={closeModal} />
       <Cover openModal={openModal} />
-      <MaisClientesSection openModal={openModal} />
+      <NoCustomersSection openModal={openModal} />
       <CallToActionSection />
       <SkillsContainer openModal={openModal} />
       <EducatorsSection openModal={openModal} />

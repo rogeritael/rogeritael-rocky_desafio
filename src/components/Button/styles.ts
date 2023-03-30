@@ -22,7 +22,8 @@ const bounceAnimation = keyframes `
     }
     100% {
         transform: translateY(0px);
-    }`
+    }
+`
 
 export const ButtonContainer = styled.button<ButtonProps>`
     padding: 16px 24.73px;

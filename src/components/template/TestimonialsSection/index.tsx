@@ -58,7 +58,7 @@ export function TestmonialsSection(){
         <TestimonialsStyle>
             <AppLimiter>
                 <div className="slider_container">
-                    <div className="testimonial_box">
+                    <div className="testimonial_box" data-aos="zoom-in">
                         <img src={leftArrow} onClick={() => previous()} alt="botão voltar" className="testimonial_arrow_controller" />
                         
                         <div className="testimonial_text_container">

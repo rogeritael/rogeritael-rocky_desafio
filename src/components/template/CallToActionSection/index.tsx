@@ -7,10 +7,10 @@ export function CallToActionSection(){
     return(
         <CallToActionContainer>
         <AppLimiter>
-            <h1 className="cta">
+            <h1 className="cta" data-aos="fade-up">
                 Tome agora a decisão de transformar a sua empresa no mundo digital
             </h1>
-            <div className="price_container">
+            <div className="price_container" data-aos="fade-left">
                 <p className="price">R$ 5.000,00</p>
                 <Button
                     onClick={ghostClick}

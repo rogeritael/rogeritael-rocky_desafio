@@ -2,21 +2,30 @@ import styled, { keyframes } from "styled-components";
 import skillbg from '../../../assets/skills_bg.png';
 import skill_arrow from '../../../assets/skill_arrow.png';
 
-const shakeButtonAnimation = keyframes `
-    0%{
-        transform: rotateX(15deg);
+const bounceAnimation = keyframes `
+    0% { transform: translateY(0); }
+    50% {
+        transform: translateY(10px);
     }
-    5%{
-        transform: rotateX(0);
+    100% {
+        transform: translateY(0px);
     }
-    10%{
-        transform: rotateX(-15deg);
-    }
-`;
+`
 
 const turnDownArrow = keyframes`
     to {
         transform: rotate(180deg);
+    }
+`;
+
+const contentEntry = keyframes`
+    from {
+        opacity: 0;
+        scale: 0.4;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
     }
 `;
 
@@ -145,7 +154,7 @@ export const SkillsStyle = styled.section`
             p {
                 font-size: 20px;
                 font-weight: 300;
-                max-width: 350px;
+                max-width: 450px;
                 text-align: center;
             }
 
@@ -156,6 +165,12 @@ export const SkillsStyle = styled.section`
                     font-size: 20px;
                     color: var(--orange);
                     cursor: pointer;
+                    animation: ${bounceAnimation} 1500ms ease-in-out infinite;
+
+                    &:hover {
+                        transition: 500ms ease-in-out;
+                        scale: 1.05;
+                    }
 
                     &:first-child {
                         margin-right: 20px;

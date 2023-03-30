@@ -63,7 +63,13 @@ export const ModalStyle = styled.div<ModalStyleProps>`
     justify-content: center;
     align-items: center;
     display: ${(props) => props.isModalOpen === true ? 'flex' : 'none'};
-    /* overflow: hidden; */
+
+    span.close_modal_area {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
     .modal {
         width: 614px;
         height: fit-content;

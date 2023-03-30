@@ -13,6 +13,6 @@ export const methodologies = [
     },
     {
         title: 'Aprendizagem baseada em projetos',
-        description: 'grade totalmente voltada a prática, onde você aprende fazendo.',
+        description: 'Grade totalmente voltada a prática, onde você aprende fazendo.',
     },
 ]

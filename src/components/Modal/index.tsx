@@ -1,6 +1,7 @@
 import { Button } from "../Button";
 import { ModalStyle } from "./styles";
 import { AiOutlineClose } from 'react-icons/ai';
+import { ghostClick } from "../../helpers/ghostClick";
 
 interface ModalProps {
     isModalOpen: boolean,
@@ -10,7 +11,8 @@ interface ModalProps {
 export function Modal({isModalOpen, closeModal}: ModalProps){
 
     return(
-        <ModalStyle isModalOpen={isModalOpen}>
+        <ModalStyle isModalOpen={isModalOpen} >
+            <span className="close_modal_area" onClick={() => closeModal()}></span>
             <div className="modal modalEntryAnimation">
                 <AiOutlineClose style={{color: '#fff'}} onClick={() => closeModal()} />
 
@@ -27,7 +29,7 @@ export function Modal({isModalOpen, closeModal}: ModalProps){
                         <p>Li e aceito os <a href="#">termos de uso</a></p>
                     </span>
                     <Button
-                        onClick={() => alert('ee')} //!!!!!!!!!!!!!!
+                        onClick={() => ghostClick()}
                         background="#F89D24"
                         text="declarar interesse"
                     />

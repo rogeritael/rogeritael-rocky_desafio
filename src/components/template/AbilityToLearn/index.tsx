@@ -15,15 +15,15 @@ export function AbilityToLearn({ openModal }: AbilityToLearnProps){
         <AbilityToLearnStyle>
                 <div className="left_text_container">
                     <div className="text">
-                        <h2>Capacidade de aprender +</h2>
-                        <p>
+                        <h2 data-aos="fade-down">Capacidade de aprender +</h2>
+                        <p data-aos="fade-right">
                             Com o acesso ao conteúdo gravado, os alunos poderão 
                             absorver o conhecimento de forma mais independente e 
                             controlada, permitindo que se concentrem nas atividades 
                             práticas e na discussão de dúvidas e ideias durante as 
                             ao vivo toda segunda, quarta e sexta. 
                         </p>
-                        <p>
+                        <p data-aos="fade-right">
                             Ao final do curso, os alunos terão plena capacidade de 
                             aprender e aplicar as técnicas e estratégias de marketing
                             digital, graças à metodologia da sala de aula invertida,
@@ -38,7 +38,7 @@ export function AbilityToLearn({ openModal }: AbilityToLearnProps){
 
                     </div>
                 </div>
-                <div className="right_text_container">
+                <div className="right_text_container" data-aos="fade-up-left">
                     {methodologies.map((methodology) => (
                         <Topic metodology={methodology.title} content={methodology.description}/>
                     ))}

@@ -31,6 +31,10 @@ export const GlobalStyle = createGlobalStyle`
         --tbody2: 1rem;
     }
 
+    body, html {
+        overflow-x: hidden;
+    }
+
     * {
         padding: 0;
         margin: 0;

@@ -1,7 +1,7 @@
 export const skillsMock = [
     {
         id: 1,
-        title: 'Estratégia de Marketing Digital',
+        title: 'Estratégia de Marketing',
         content: 'Ao terminar o curso você saberá planejar e implementar uma estratégia de marketing digital eficaz para alcançar os objetivos de negócios. Os alunos aprenderão a identificar o público-alvo, definir as metas, escolher as táticas corretas e avaliar os resultados.'
     },
     {

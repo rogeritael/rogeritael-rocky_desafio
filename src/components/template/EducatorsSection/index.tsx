@@ -13,9 +13,9 @@ export function EducatorsSection({ openModal }: EducatorSectionProps){
     return(
         <AppLimiter>
             <EducatorsSectionStyle>
-                <h1 className="title">Nossos <br/> Professores</h1>
+                <h1 className="title" data-aos="zoom-in-down">Nossos <br/> Professores</h1>
 
-                <div className="card_chain">
+                <div className="card_chain" data-aos="fade-right">
                     {educators.map((educator) => (
                         <EducatorCard
                             name={educator.name}

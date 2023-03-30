@@ -9,7 +9,7 @@ interface MaisClientesSectionProps {
     openModal: () => void,
 }
 
-export function MaisClientesSection({ openModal }: MaisClientesSectionProps){
+export function NoCustomersSection({ openModal }: MaisClientesSectionProps){
 
     function ghostClick(){
         return
@@ -20,9 +20,9 @@ export function MaisClientesSection({ openModal }: MaisClientesSectionProps){
         <AppLimiter>
             <div className="left_side">
                 <div className="mais_clientes_text_container">
-                    <h1>Sem <br/> clientes?</h1>
-                    <p className="subtitle">Veja como a Synapse vai te ajudar:</p>
-                    <p className="description">
+                    <h1 data-aos="fade-left">Sem <br/> clientes?</h1>
+                    <p data-aos="fade-right" className="subtitle">Veja como a Synapse vai te ajudar:</p>
+                    <p data-aos="fade-left" className="description">
                         O curso de marketing digital da Synapse é uma oportunidade imperdível para aqueles
                         que desejam aprimorar suas habilidades de marketing e aumentar sua presença online.
                         
@@ -49,7 +49,7 @@ export function MaisClientesSection({ openModal }: MaisClientesSectionProps){
                 </div>
             </div>
             <div className="right_side">
-                <div className="mais_clientes_card_container">
+                <div data-aos="zoom-in" className="mais_clientes_card_container">
                     <GoalCard
                         title="estratégias eficazes"
                         description="Você vai aprender as principais estratégias de marketing digital em plataformas como Facebook Ads, Google Ads."

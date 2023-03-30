@@ -11,10 +11,10 @@ export function AmIAbleSection({ openModal }: AmIAbleSectionProps){
     return(
         <AmIAbleStyle>
             <AppLimiter>
-            <div className="text_container">
-                <h2>Eu estou Apto?</h2>
+            <div className="text_container" >
+                <h2 data-aos="fade-down-left">Eu estou Apto?</h2>
 
-                <p>
+                <p data-aos="fade-left">
                     Se você é um empresário que deseja expandir sua presença online e impulsionar suas 
                     vendas, ou um profissional de marketing que quer se manter atualizado com as últimas 
                     tendências e técnicas de marketing, este curso é a chave para o 
