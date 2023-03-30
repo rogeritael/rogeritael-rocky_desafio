@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import rectangle from '../../../assets/Rectangle.png';
 
 export const EducatorsSectionStyle = styled.section`
     h1.title {
@@ -7,6 +8,22 @@ export const EducatorsSectionStyle = styled.section`
         margin-left: 186px;
         font-weight: 400;
     }
+
+    //-----
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 150px;
+        height: 150px;
+        background-image: url(${rectangle});
+        background-size: cover;
+        position: absolute;
+        top: -115px;
+        left: 8%;
+    }
+
+    //----
 
     .card_chain {
         display: flex;
@@ -22,6 +39,10 @@ export const EducatorsSectionStyle = styled.section`
     }
     
     @media (max-width: 425px) {
+
+        &::before {
+            top: -50px;
+        }
 
         h1.title {
             /* margin-left: 20px; */

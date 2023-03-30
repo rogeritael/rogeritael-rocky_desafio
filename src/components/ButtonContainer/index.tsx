@@ -1,3 +1,4 @@
+import { ghostClick } from "../../helpers/ghostClick";
 import { Button } from "../Button";
 import { ButtonContainerStyle } from "./styles";
 
@@ -15,7 +16,7 @@ export function ButtonContainer({ openModal }: ButtonProps){
                 onClick={() => openModal()}
             />
             <Button
-                onClick={() => alert('comprar')} //!!!!!!!!!!!!!!!!!!
+                onClick={() => ghostClick()}
                 text="comprar agora" 
                 background='#F89D24' 
             />

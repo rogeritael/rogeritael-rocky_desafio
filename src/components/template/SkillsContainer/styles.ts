@@ -117,6 +117,7 @@ export const SkillsStyle = styled.section`
                         bottom: 45px;
                         background-image: url(${skill_arrow});
                         background-repeat: no-repeat;
+                        display: none;
                     }
 
                     &:hover {
@@ -218,6 +219,10 @@ export const SkillsStyle = styled.section`
                     h2 {
                         text-align: left;
                         padding: 0 30px;
+
+                        &::after {
+                            display: block;
+                        }
                     }
 
                     p.description {

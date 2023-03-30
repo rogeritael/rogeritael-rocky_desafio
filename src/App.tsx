@@ -13,10 +13,6 @@ import { MaisClientesSection } from './components/template/MaisClientesSection';
 import { SkillsContainer } from './components/template/SkillsContainer';
 import { TestmonialsSection } from './components/template/TestimonialsSection';
 
-
-
-import { SkillsContainer as SkillBackup } from './components/template/SkillsContainerBackup';
-
 import { GlobalStyle } from './GlobalStyles';
 
 
@@ -42,9 +38,8 @@ function App() {
       <Modal isModalOpen={isModalOpen} closeModal={closeModal} />
       <Cover openModal={openModal} />
       <MaisClientesSection openModal={openModal} />
-      <CallToActionSection openModal={openModal} />
-      {/* <SkillBackup openModal={openModal} /> */}
-      <SkillsContainer />
+      <CallToActionSection />
+      <SkillsContainer openModal={openModal} />
       <EducatorsSection openModal={openModal} />
       <TestmonialsSection />
       <AmIAbleSection openModal={openModal} />

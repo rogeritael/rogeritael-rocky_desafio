@@ -41,6 +41,8 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Yantramanav';
     }
 
+
+
     body {
         background-color: #262626;
     }
@@ -54,4 +56,19 @@ export const GlobalStyle = createGlobalStyle`
         } //14px
     }
 
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: black;
+        background: var(--light-gray2);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: var(--orange);
+        border-radius: 3px;
+    }
 `;

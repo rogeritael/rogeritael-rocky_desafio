@@ -10,7 +10,11 @@ interface onClickProps {
     id: number,
 }
 
-export function SkillsContainer(){
+interface SkillsContainerProps {
+    openModal: () => void,
+}
+
+export function SkillsContainer({ openModal }: SkillsContainerProps){
     const [content, setContent] = useState(skillsMock[0].content);
     const [activeSkill, setActiveSkill] = useState(1);
 
@@ -39,12 +43,12 @@ export function SkillsContainer(){
                     <div className="body">
                         <p>{content}</p>
                         <div className="buttons">
-                            <input type="button" value="TENHO INTERESSE" />
+                            <input type="button" onClick={() => openModal()} value="TENHO INTERESSE" />
                             <input type="button" value="COMPRAR AGORA" />
                         </div>
                     </div>
                 </div>
-                <ButtonContainer openModal={() => alert()} />
+                <ButtonContainer openModal={() => openModal()} />
             </AppLimiter>
         </SkillsStyle>
     )

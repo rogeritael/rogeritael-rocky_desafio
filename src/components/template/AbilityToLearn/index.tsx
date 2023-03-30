@@ -5,11 +5,11 @@ import { AbilityToLearnStyle } from "./styles";
 import { methodologies } from "../../../mocks/methodologies";
 import { ButtonContainer } from "../../ButtonContainer";
 
-interface AbilityToLearn {
+interface AbilityToLearnProps {
     openModal: () => void,
 }
 
-export function AbilityToLearn({ openModal }: AbilityToLearn){
+export function AbilityToLearn({ openModal }: AbilityToLearnProps){
     return(
         <AppLimiter>
         <AbilityToLearnStyle>

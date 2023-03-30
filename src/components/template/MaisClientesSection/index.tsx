@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { AppLimiter } from "../../AppLimiter";
 import { Button } from "../../Button";
 import { ButtonContainer } from "../../ButtonContainer";
@@ -9,6 +10,11 @@ interface MaisClientesSectionProps {
 }
 
 export function MaisClientesSection({ openModal }: MaisClientesSectionProps){
+
+    function ghostClick(){
+        return
+    }
+
     return(
         <MaisClientesContainer>
         <AppLimiter>
@@ -35,7 +41,7 @@ export function MaisClientesSection({ openModal }: MaisClientesSectionProps){
                             text="tenho interesse"
                         />
                         <Button
-                            onClick={() => alert('comprar')}
+                            onClick={() => ghostClick()}
                             background="#F89D24"
                             text="comprar agora"
                         />

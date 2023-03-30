@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import rectangle from '../../../assets/Rectangle.png';
 
 export const AbilityToLearnStyle = styled.section`
     min-height: 759px;
@@ -6,6 +7,22 @@ export const AbilityToLearnStyle = styled.section`
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+
+    //-----
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 150px;
+        height: 150px;
+        background-image: url(${rectangle});
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 8%;
+    }
+
+    //----
 
     .button_container {
         display: none;

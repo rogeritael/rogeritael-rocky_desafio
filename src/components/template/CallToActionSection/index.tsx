@@ -1,8 +1,9 @@
 import { AppLimiter } from "../../AppLimiter";
 import { Button } from "../../Button";
 import { CallToActionContainer } from "./styles";
+import { ghostClick } from "../../../helpers/ghostClick";
 
-export function CallToActionSection({openModal}: { openModal: () => void }){
+export function CallToActionSection(){
     return(
         <CallToActionContainer>
         <AppLimiter>
@@ -12,9 +13,9 @@ export function CallToActionSection({openModal}: { openModal: () => void }){
             <div className="price_container">
                 <p className="price">R$ 5.000,00</p>
                 <Button
-                    onClick={openModal}
+                    onClick={ghostClick}
                     text="fazer o curso"
-                    background="#F89D24" ///COLOCAR WHITE
+                    background="#F89D24"
                 />
             </div>
         </AppLimiter>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import rectangle from '../../../assets/Rectangle.png';
 
 export const MaisClientesContainer = styled.section`
     /* background-color: ; */
@@ -6,6 +7,23 @@ export const MaisClientesContainer = styled.section`
     background: rgb(61,61,61);
     background: linear-gradient(0deg, rgba(61,61,61,1) 0%, rgba(12,12,12,1) 100%);
     min-height: 759px;
+
+
+    //-----
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 150px;
+        height: 150px;
+        background-image: url(${rectangle});
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 8%;
+    }
+
+    //----
 
     .app_limiter {
         min-height: 759px;
@@ -138,5 +156,6 @@ export const MaisClientesContainer = styled.section`
             }
         } 
     }
+
 
 `;

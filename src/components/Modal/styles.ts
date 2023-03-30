@@ -23,7 +23,6 @@ const inputEntry = keyframes`
         opacity: 0;
     }
     to {
-        /* transform: translateX(0px); */
         opacity: 1;
     }
 `
@@ -68,9 +67,6 @@ export const ModalStyle = styled.div<ModalStyleProps>`
     .modal {
         width: 614px;
         height: fit-content;
-        /* overflow: hidden; */
-        /* min-height: 759px; */
-        /* max-height: 743px; */
         background-color: var(--medium-gray1);
         position: relative;
         display: flex;
@@ -87,18 +83,13 @@ export const ModalStyle = styled.div<ModalStyleProps>`
             color: #ccc;
             cursor: pointer;
             display: flex;
-            animation: ${closeButtonEntry} 500ms ease-in-out;
-            /* var(--light-gray3) */
-            /* margin: 50pc 60px; */
-
-            
+            opacity: 0.5;
+            animation: ${closeButtonEntry} 500ms ease-in-out; 
 
             &:hover {
                 transition: 500ms ease-in-out;
-                scale: 1.2;
-                transform: rotate(90deg);
+                transform: rotate(180deg);
             }
-
         }
 
         h1 {
