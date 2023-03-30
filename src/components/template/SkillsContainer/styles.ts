@@ -14,10 +14,16 @@ const shakeButtonAnimation = keyframes `
     }
 `;
 
+const turnDownArrow = keyframes`
+    to {
+        transform: rotate(180deg);
+    }
+`;
+
 const toggleSkill = keyframes`
     from {
-        /* height: 0px; */
-        padding: 0 32px;
+        height: 0px;
+        /* padding: 0 32px; */
         border: none;
         opacity: 0;
         p {
@@ -25,9 +31,8 @@ const toggleSkill = keyframes`
         }
     }
     to {
-        height: auto;
+        height: 100%;
         opacity: 1;
-        padding: 25px 32px;
         border-top: 1px solid var(--orange);
         border-bottom: 1px solid var(--orange);
         p {
@@ -61,8 +66,6 @@ export const SkillsStyle = styled.section`
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: center; */
-        /* border: 1px solid red; */
     }
 
     .button_container {
@@ -100,6 +103,23 @@ export const SkillsStyle = styled.section`
                         /* background-color: black; */
                     }
 
+                    &.active {
+                        &::after {
+                            animation: ${turnDownArrow} 500ms ease-in-out;
+                        }
+                    }
+
+                    &::after {
+                        content: '';
+                        width: 11.31px;
+                        height: 6.6px;
+                        position: absolute;
+                        right: 30px;
+                        bottom: 45px;
+                        background-image: url(${skill_arrow});
+                        background-repeat: no-repeat;
+                    }
+
                     &:hover {
                         &::before {
                             width: 100%;
@@ -107,7 +127,8 @@ export const SkillsStyle = styled.section`
                     }
                 }
                 p.description {
-                    display: none;    
+                    display: none;
+                    animation: ${toggleSkill} 300ms ease-in-out;
                 }
             }
         }
@@ -171,10 +192,6 @@ export const SkillsStyle = styled.section`
                     max-width: 450px;
                 }
             }
-
-            /* .single_skill p.description {
-                display: block;
-            } */
         }
     }
 
@@ -196,6 +213,26 @@ export const SkillsStyle = styled.section`
 
             .header {
                 width: 100%;
+
+                .single_skill {
+
+                    h2 {
+                        text-align: left;
+                        padding: 0 30px;
+                    }
+
+                    p.description {
+                        display: block;
+                        min-height: 176px;
+                        background: #262626;
+                        padding: 25px 42px;
+                        font-size: 20px;
+                        font-weight: 300;
+                        text-align: center;
+                        border-top: 1px solid var(--orange);
+                        border-bottom: 1px solid var(--orange);
+                    }
+                } 
             }
         } 
     }

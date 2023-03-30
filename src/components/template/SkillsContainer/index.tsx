@@ -5,11 +5,18 @@ import { Button } from "../../Button";
 import { ButtonContainer } from "../../ButtonContainer";
 import { SkillsStyle } from "./styles";
 
+interface onClickProps {
+    content: string,
+    id: number,
+}
+
 export function SkillsContainer(){
     const [content, setContent] = useState(skillsMock[0].content);
+    const [activeSkill, setActiveSkill] = useState(1);
 
-    function handleClick(content: string){
+    function handleClick({content, id}: onClickProps){
         setContent(content);
+        setActiveSkill(id)
     }
 
     return(
@@ -20,9 +27,11 @@ export function SkillsContainer(){
                     <div className="header">
                         {
                             skillsMock.map((skill) => (
-                                <div className="single_skill">
-                                    <h2 onClick={() => handleClick(skill.content)}>{skill.title}</h2>
-                                    <p className="description">{skill.content}</p>
+                                <div className={`single_skill ${skill.id === activeSkill ? 'active' : ''} `}>
+                                    <h2 onClick={() => handleClick({content: skill.content, id: skill.id})}>{skill.title}</h2>
+                                    {skill.id === activeSkill &&(
+                                        <p className="description">{skill.content}</p>
+                                    )}
                                 </div>
                             ))
                         }
