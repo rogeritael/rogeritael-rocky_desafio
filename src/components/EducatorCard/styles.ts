@@ -44,16 +44,21 @@ export const EducatorCardStyle = styled.div`
         }
     }
 
+    @media(max-width: 720px){
+        .text_container {
+            p {
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+    }
+
     @media (max-width: 425px) {
         scale: .9;
-        .educator_profile {
-        }
     }
 
     @media (max-width: 375px) {
         margin: -40px 0;
         scale: .8;
-        .educator_profile {
-        }
     }
 `;

@@ -101,11 +101,15 @@ export const CoverContainer = styled.header`
 
         h1.call_to_action_title {
             font-size: var(--t2);
+            padding-top: 20px;
+            line-height: 50px;
         }
 
         p.cover_description_text {
             margin-bottom: 40px;
-            font-size: 16px;
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 25px;
         }
 
         h1.call_to_action_title {

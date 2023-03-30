@@ -29,6 +29,7 @@ export const AmIAbleStyle = styled.section`
         p {
             font-size: var(--tbody1);
             margin-bottom: 80px;
+            font-weight: 300;
         }
     }
 
@@ -43,13 +44,22 @@ export const AmIAbleStyle = styled.section`
 
     }
 
+    @media(max-width: 720px){
+        .text_container p {
+            font-size: 18px;
+        }
+    }
+
     @media (max-width: 425px){
         .app_limiter {
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .text_container {
             width: 100%;
+            margin-bottom: -30px;
 
             h2 {
                 font-size: var(--t1);

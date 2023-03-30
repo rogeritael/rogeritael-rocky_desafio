@@ -23,7 +23,6 @@ const turnDownArrow = keyframes`
 const toggleSkill = keyframes`
     from {
         height: 0px;
-        /* padding: 0 32px; */
         border: none;
         opacity: 0;
         p {
@@ -43,7 +42,6 @@ const toggleSkill = keyframes`
 
 export const SkillsStyle = styled.section`
     min-height: 611px;
-    /* width: 100%; */
     display: flex;
     align-items: center;
     background-image: url(${skillbg});
@@ -82,6 +80,14 @@ export const SkillsStyle = styled.section`
             .single_skill {
                 border-top: 1px solid rgba(0,0,0,0.06);
 
+                &.active {
+                    h2 {
+                        &::after {
+                            animation: ${turnDownArrow} 500ms ease-in-out forwards;
+                        }
+                    }
+                }
+
                 h2 {
                     text-align: center;
                     line-height: 94px;
@@ -100,13 +106,6 @@ export const SkillsStyle = styled.section`
                         background-color: #fff;
                         opacity: 0.05;
                         transition: 500ms ease-in-out;
-                        /* background-color: black; */
-                    }
-
-                    &.active {
-                        &::after {
-                            animation: ${turnDownArrow} 500ms ease-in-out;
-                        }
                     }
 
                     &::after {
@@ -225,7 +224,7 @@ export const SkillsStyle = styled.section`
                         display: block;
                         min-height: 176px;
                         background: #262626;
-                        padding: 25px 42px;
+                        padding: 25px 62px;
                         font-size: 20px;
                         font-weight: 300;
                         text-align: center;
@@ -235,5 +234,13 @@ export const SkillsStyle = styled.section`
                 } 
             }
         } 
+    }
+
+    @media (max-width: 620px){
+        .skills .header .single_skill {
+            p.description {
+                padding: 25px 42px;
+            }
+        }
     }
 `

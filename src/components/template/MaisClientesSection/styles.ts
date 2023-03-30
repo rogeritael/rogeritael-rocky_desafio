@@ -5,6 +5,7 @@ export const MaisClientesContainer = styled.section`
     
     background: rgb(61,61,61);
     background: linear-gradient(0deg, rgba(61,61,61,1) 0%, rgba(12,12,12,1) 100%);
+    min-height: 759px;
 
     .app_limiter {
         min-height: 759px;
@@ -97,16 +98,17 @@ export const MaisClientesContainer = styled.section`
             flex-direction: row;
             width: 100%;
             justify-content: space-evenly;
+            margin-bottom: 40px;
         }
 
         .right_side {
+            margin-bottom: 40px;
             /* margin: 60px 0; */
             /* margin-bottom: 97px; */
         }
     }
 
     @media (max-width: 890px) {
-
         .left_side .price_container {
              display: none;
         }
@@ -120,17 +122,21 @@ export const MaisClientesContainer = styled.section`
 
         .left_side {
             padding: 20px;
+            margin-bottom: 0;
 
             .price_container {
                 display: none;
             }
         }
 
-        .right_side .mais_clientes_card_container {
-            margin: 60px 0;
-            grid-template-columns: 250px;
-            grid-template-rows: repeat(4, 250px);
-        }
+        .right_side {
+            margin-bottom: 0;
+            .mais_clientes_card_container {
+                margin: 60px 0;
+                grid-template-columns: 250px;
+                grid-template-rows: repeat(4, 250px);
+            }
+        } 
     }
 
 `;

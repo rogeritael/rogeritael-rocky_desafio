@@ -57,5 +57,11 @@ export const GoalCardContainer = styled.div`
             opacity: 0.5;
         }
     }
+
+    @media(max-width: 1100px){
+        .text_container p {
+            font-size: 16px;
+        }
+    }
     
 `;
