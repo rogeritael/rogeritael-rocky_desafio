@@ -51,7 +51,6 @@ const subtitleEntry = keyframes`
 
 export const ModalStyle = styled.div<ModalStyleProps>`
     width: 100%;
-    /* height: fit-content; */
     position: fixed;
     top: 0;
     left: 0;
@@ -72,6 +71,7 @@ export const ModalStyle = styled.div<ModalStyleProps>`
 
     .modal {
         width: 614px;
+        padding-bottom: 40px; //!!!!!!!!!!
         height: fit-content;
         background-color: var(--medium-gray1);
         position: relative;
@@ -79,7 +79,6 @@ export const ModalStyle = styled.div<ModalStyleProps>`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
 
         svg {
             font-size: 30px;
@@ -115,6 +114,7 @@ export const ModalStyle = styled.div<ModalStyleProps>`
         }
 
         form#modal {
+            /* margin-top: -20px; */
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -180,15 +180,13 @@ export const ModalStyle = styled.div<ModalStyleProps>`
 
     @media (max-width: 425px){
         .modal {
-            svg {
-                right: 20px;
-                font-size: 25px;
-                top: 70px;
-                margin-top: 50px;
-            }
+            height: 100%;
 
-            h1 {
-                margin-top: 180px;
+            svg {
+                right: 15px;
+                font-size: 25px;
+                top: -30px;
+                margin-top: 50px;
             }
 
             p.description {

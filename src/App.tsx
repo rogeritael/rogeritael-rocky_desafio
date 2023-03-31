@@ -1,5 +1,5 @@
 import Aos from 'aos';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ChatBot } from './components/ChatBot';
 import { HelpButton } from './components/HelpButton';
 import { Modal } from './components/Modal';
@@ -13,6 +13,7 @@ import { Footer } from './components/template/Footer';
 import { NoCustomersSection } from './components/template/NoCustomersSection';
 import { SkillsContainer } from './components/template/SkillsContainer';
 import { TestmonialsSection } from './components/template/TestimonialsSection';
+import TagManager from 'react-gtm-module';
 import 'aos/dist/aos.css';
 
 import { GlobalStyle } from './GlobalStyles';
@@ -20,15 +21,20 @@ import { GlobalStyle } from './GlobalStyles';
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
-  Aos.init({ duration: 1200 });
+  Aos.init({ duration: 1000 });
+
+  useEffect(() => {
+    const tagManagerArguments = {
+      gtmId: 'GTM-TJ8L3JZ'
+    }
+    
+    TagManager.initialize(tagManagerArguments);
+    
+  }, []);
 
   function openModal(){
     setIsModalOpen(true);
   }
-
-  // function openChat(){
-  //   setIsChatbotOpen(true);
-  // }
 
   function closeModal(){
     setIsModalOpen(false)

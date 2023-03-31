@@ -20,7 +20,7 @@ export function SkillsContainer({ openModal }: SkillsContainerProps){
 
     function handleClick({content, id}: onClickProps){
         setContent(content);
-        setActiveSkill(id)
+        setActiveSkill(id);
     }
 
     return(
