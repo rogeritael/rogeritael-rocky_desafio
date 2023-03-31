@@ -4,8 +4,6 @@ export const EducatorCardStyle = styled.div`
     padding: 20px;
     border: 1px solid #fff;
     border-radius: 5px;
-    /* width: max-content; */
-    /* height: max-content; */
 
     .educator_profile {
         width: 311.67px;

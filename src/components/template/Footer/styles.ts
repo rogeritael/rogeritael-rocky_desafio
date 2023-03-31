@@ -47,7 +47,6 @@ export const FooterStyle = styled.footer`
         }
 
         ul {
-            /* flex-wrap: wrap; */
             flex-direction: column;
             margin-top: 30px;
 

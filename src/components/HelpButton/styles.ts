@@ -40,6 +40,10 @@ export const HelpButtonStyle = styled.div`
         .text_chain {
             transition: 500ms ease-in-out;
             transform: rotate(360deg);
+
+            p {
+                pointer-events: none;
+            }
         }
     }
 

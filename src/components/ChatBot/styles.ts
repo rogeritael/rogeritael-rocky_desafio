@@ -45,14 +45,11 @@ export const ChatBotStyle = styled.div<ChatbotProps>`
         background-color: var(--orange);
         display: flex;
         padding: 3px 10px;
-        /* align-items: center; */
 
         .chat_info {
             display: flex;
             align-items: center;
             
-            
-
             .chat_text {
                 h1 {
                     font-size: var(--tbody1);
@@ -98,7 +95,6 @@ export const ChatBotStyle = styled.div<ChatbotProps>`
     }
 
     .chat_body {
-        /* color: #333; */
         
         .chat_message {
             padding: 10px;

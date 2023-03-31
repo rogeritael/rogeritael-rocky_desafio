@@ -19,4 +19,4 @@ export const skillsMock = [
         title: 'E-mail Marketing',
         content: 'Ao terminar o curso você estará apto a  utilizar o e-mail marketing para alcançar os objetivos de negócios. Os alunos aprenderão a criar listas de e-mail, escrever mensagens eficazes, criar campanhas de e-mail e avaliar os resultados.'
     },
-]
+];

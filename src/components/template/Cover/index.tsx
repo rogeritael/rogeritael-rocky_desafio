@@ -1,6 +1,4 @@
-import { Button } from "../../Button";
 import { CoverContainer } from "./styles";
-
 import logo from '../../../assets/logo_synapse.png';
 import { AppLimiter } from "../../AppLimiter";
 import { ButtonContainer } from "../../ButtonContainer";

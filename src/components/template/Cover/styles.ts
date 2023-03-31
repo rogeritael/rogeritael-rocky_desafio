@@ -36,10 +36,7 @@ const logoAnimation = keyframes`
 export const CoverContainer = styled.header`
     margin: 0 auto;
     width: 100%;
-
     padding: 180px 15px;
-
-    /* display: flex; */
     background-image: linear-gradient(to left top, #2c2c2c, #242424, #1d1d1d, #151515, #0c0c0c);
 
     .app_limiter {

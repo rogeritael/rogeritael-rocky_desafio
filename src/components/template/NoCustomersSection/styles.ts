@@ -2,12 +2,9 @@ import styled from "styled-components";
 import rectangle from '../../../assets/Rectangle.png';
 
 export const MaisClientesContainer = styled.section`
-    /* background-color: ; */
-    
     background: rgb(61,61,61);
     background: linear-gradient(0deg, rgba(61,61,61,1) 0%, rgba(12,12,12,1) 100%);
     min-height: 759px;
-
 
     //-----
     position: relative;
@@ -22,7 +19,6 @@ export const MaisClientesContainer = styled.section`
         top: 0;
         left: 8%;
     }
-
     //----
 
     .app_limiter {
@@ -41,7 +37,6 @@ export const MaisClientesContainer = styled.section`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* margin-bottom: -70px; */
 
         .mais_clientes_text_container {
             display: flex;
@@ -121,8 +116,6 @@ export const MaisClientesContainer = styled.section`
 
         .right_side {
             margin-bottom: 40px;
-            /* margin: 60px 0; */
-            /* margin-bottom: 97px; */
         }
     }
 
@@ -156,6 +149,4 @@ export const MaisClientesContainer = styled.section`
             }
         } 
     }
-
-
 `;

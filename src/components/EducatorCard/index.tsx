@@ -1,8 +1,4 @@
 import { EducatorCardStyle } from "./styles";
-import profile_img from '../../assets/profile.jpg';
-import { AppLimiter } from "../AppLimiter";
-
-import foto from '../../assets/profile.jpg'
 
 interface EducatorCardProps {
     name: string,

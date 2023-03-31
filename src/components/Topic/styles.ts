@@ -2,12 +2,10 @@ import styled, {keyframes} from "styled-components";
 import elipse from '../../assets/topic_ellipse.png';
 
 const elipseAnimation = keyframes`
-
-50%{
-    transform: scale(0.5);
-    opacity: .0;
-}
-
+    50%{
+        transform: scale(0.5);
+        opacity: .0;
+    }
 `;
 
 export const TopicStyle = styled.div`

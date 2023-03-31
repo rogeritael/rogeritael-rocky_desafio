@@ -1,6 +1,5 @@
 import { ChatBotStyle } from "./styles";
 import { GrClose } from 'react-icons/gr';
-import { useState } from "react";
 
 interface ChatbotProps {
     isOpen: boolean,
@@ -8,8 +7,6 @@ interface ChatbotProps {
 }
 
 export function ChatBot({ isOpen, setIsChatbotOpen }: ChatbotProps){
-    // const [isChatOpen, setIsChatOpen] = useState(true);
-
     function closeChat(){
         setIsChatbotOpen(false);
     }

@@ -29,12 +29,6 @@ const textEntry = keyframes`
     }
 `
 
-const activePlus = keyframes`
-    to {
-        transform: rotate(0);
-    }
-`;
-
 const titleEntry = keyframes`
     from {
         opacity: 0.4;
@@ -92,17 +86,12 @@ export const TestimonialsStyle = styled.section`
             justify-content: space-between;
 
             .testimonial_text_container {
-                /* border: 1px solid red; */
-                /* height: 300px; */
                 margin: 0 60px;
                 width: 800px;
             }
             .testimonial{
-                /* margin: 0 60px; */
-                /* position: absolute; */
                 margin: 0 60px;
                 display: block;
-                
 
                 &.active {
                     p, h3 {

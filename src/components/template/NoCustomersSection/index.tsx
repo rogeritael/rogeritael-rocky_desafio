@@ -1,19 +1,15 @@
-import { useEffect, useRef } from "react";
 import { AppLimiter } from "../../AppLimiter";
 import { Button } from "../../Button";
 import { ButtonContainer } from "../../ButtonContainer";
 import { GoalCard } from "../../GoalCard";
-import { MaisClientesContainer } from "./styles"
+import { MaisClientesContainer } from "./styles";
+import { ghostClick } from "../../../helpers/ghostClick";
 
 interface MaisClientesSectionProps {
     openModal: () => void,
 }
 
 export function NoCustomersSection({ openModal }: MaisClientesSectionProps){
-
-    function ghostClick(){
-        return
-    }
 
     return(
         <MaisClientesContainer>

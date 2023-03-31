@@ -18,17 +18,6 @@ const turnDownArrow = keyframes`
     }
 `;
 
-const contentEntry = keyframes`
-    from {
-        opacity: 0;
-        scale: 0.4;
-    }
-    to {
-        opacity: 1;
-        scale: 1;
-    }
-`;
-
 const toggleSkill = keyframes`
     from {
         height: 0px;
@@ -201,8 +190,6 @@ export const SkillsStyle = styled.section`
             }
         
             .body {
-                /* width: 500px; */
-
                 p {
                     max-width: 450px;
                 }

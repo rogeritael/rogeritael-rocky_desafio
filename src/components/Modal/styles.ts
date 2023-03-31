@@ -1,8 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
 interface ModalStyleProps {
-    isModalOpen?: any,
-    //arrumar o any !!!!!!!!!!!!!!!
+    isModalOpen?: boolean,
 }
 
 const closeButtonEntry = keyframes`
@@ -71,7 +70,7 @@ export const ModalStyle = styled.div<ModalStyleProps>`
 
     .modal {
         width: 614px;
-        padding-bottom: 40px; //!!!!!!!!!!
+        padding-bottom: 40px;
         height: fit-content;
         background-color: var(--medium-gray1);
         position: relative;
@@ -114,7 +113,6 @@ export const ModalStyle = styled.div<ModalStyleProps>`
         }
 
         form#modal {
-            /* margin-top: -20px; */
             display: flex;
             flex-direction: column;
             gap: 20px;

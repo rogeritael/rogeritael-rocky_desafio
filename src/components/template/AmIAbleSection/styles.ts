@@ -53,7 +53,6 @@ export const AmIAbleStyle = styled.section`
 
     @media (max-width: 768px){
         justify-content: center;
-        /* height: ; */
 
         .text_container {
             margin: 0;

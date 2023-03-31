@@ -1,7 +1,7 @@
 import { LimiterContainer } from "./styles";
 
 interface AppLimiterProps {
-    children: any,
+    children: string | JSX.Element | JSX.Element[],
     className?: string
 }
 

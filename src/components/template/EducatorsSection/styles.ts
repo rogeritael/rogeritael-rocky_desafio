@@ -22,7 +22,6 @@ export const EducatorsSectionStyle = styled.section`
         top: -115px;
         left: 8%;
     }
-
     //----
 
     .card_chain {
@@ -45,8 +44,6 @@ export const EducatorsSectionStyle = styled.section`
         }
 
         h1.title {
-            /* margin-left: 20px; */
-            /* margin-bottom: 10px; */
             margin: 50px 20px 10px 10px;
         }
 

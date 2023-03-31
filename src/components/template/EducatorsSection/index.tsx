@@ -1,5 +1,4 @@
 import { AppLimiter } from "../../AppLimiter";
-import { Button } from "../../Button";
 import { EducatorCard } from "../../EducatorCard";
 import { EducatorsSectionStyle } from "./styles";
 import { educators } from "../../../mocks/educators";

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { skillsMock } from "../../../mocks/skills";
 import { AppLimiter } from "../../AppLimiter";
-import { Button } from "../../Button";
 import { ButtonContainer } from "../../ButtonContainer";
 import { SkillsStyle } from "./styles";
 
@@ -10,11 +9,11 @@ interface onClickProps {
     id: number,
 }
 
-interface SkillsContainerProps {
+interface SkillsSectionProps {
     openModal: () => void,
 }
 
-export function SkillsContainer({ openModal }: SkillsContainerProps){
+export function SkillsSection({ openModal }: SkillsSectionProps){
     const [content, setContent] = useState(skillsMock[0].content);
     const [activeSkill, setActiveSkill] = useState(1);
 

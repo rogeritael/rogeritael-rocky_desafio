@@ -42,4 +42,4 @@ export const educators = [
         title: 'Especialista em Comunicação com o Público',
         description: 'Maria é uma profissional de comunicação experiente e sabe como criar uma conexão emocional com o público para gerar mais vendas. Ela está entusiasmada para ensinar aos alunos as técnicas mais eficazes para se comunicar com o público-alvo e aumentar as vendas.'
     },
-]
+];
